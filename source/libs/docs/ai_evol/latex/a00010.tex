@@ -1,0 +1,239 @@
+\hypertarget{a00010}{\subsection{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/ai\-\_\-evol/list.h File Reference}
+\label{a00010}\index{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/ai\-\_\-evol/list.\-h@{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/ai\-\_\-evol/list.\-h}}
+}
+
+
+This file contains a primitive list implementation -\/ which exactly a list.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{a00005}{list\-\_\-\-N\-O\-D\-E}
+\item 
+struct \hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T}
+\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{a00010_af9f798ca7814dd1b5ef32b7ecfa7462f}{list\-\_\-\-D\-E\-S\-T\-R\-O\-Y} )(void $\ast$element)
+\begin{DoxyCompactList}\small\item\em callback function to destroy an element \end{DoxyCompactList}\item 
+typedef void $\ast$($\ast$ \hyperlink{a00010_a17ecf184324f5152136d35a721def4b3}{list\-\_\-\-C\-O\-P\-Y} )(void $\ast$dest, const void $\ast$element, size\-\_\-t size)
+\begin{DoxyCompactList}\small\item\em callback function to clone an element \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00010_a1d2b26917d529007b957a4643c2cefa4}{list\-\_\-init\-\_\-list} (\hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$list, unsigned element\-\_\-size, \hyperlink{a00010_af9f798ca7814dd1b5ef32b7ecfa7462f}{list\-\_\-\-D\-E\-S\-T\-R\-O\-Y} destroy\-\_\-func, \hyperlink{a00010_a17ecf184324f5152136d35a721def4b3}{list\-\_\-\-C\-O\-P\-Y} copy\-\_\-func)
+\item 
+void \hyperlink{a00010_a699a1a35f9054c6dc82ce9ee1845843f}{list\-\_\-init\-\_\-like} (\hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$list, const \hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$other)
+\item 
+void \hyperlink{a00010_ac30216cf9b9cdf221aa68f1e2f819d9a}{list\-\_\-add\-\_\-element} (\hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$list, const void $\ast$element)
+\item 
+unsigned \hyperlink{a00010_ad45f8ded6762e1de3627829064d9b5e9}{list\-\_\-size} (const \hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$list)
+\item 
+unsigned \hyperlink{a00010_aa55f63880ae1e6ea175c26ed2e6e2da2}{list\-\_\-element\-\_\-size} (const \hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$list)
+\item 
+bool \hyperlink{a00010_a9cbeca339af8257f88a466490d02b818}{list\-\_\-is\-\_\-empty} (const \hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$list)
+\item 
+void \hyperlink{a00010_a8a7dff7af74ccfabc9997d1505e1cb3a}{list\-\_\-destroy} (\hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$list)
+\item 
+\hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} \hyperlink{a00010_ab993127d4cd88ea8e379c4448e33dd07}{list\-\_\-copy} (const \hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$list)
+\item 
+void \hyperlink{a00010_aed56e847043db6a0171561029b2d2b1e}{list\-\_\-concat\-\_\-list} (\hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$dest, const \hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$source)
+\item 
+void \hyperlink{a00010_a02924a0a3efce2aa3a6b6f90d788e6f4}{list\-\_\-revert} (\hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$list)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+This file contains a primitive list implementation -\/ which exactly a list. 
+
+Definition in file \hyperlink{a00010_source}{list.\-h}.
+
+
+
+\subsubsection{Typedef Documentation}
+\hypertarget{a00010_a17ecf184324f5152136d35a721def4b3}{\index{list.\-h@{list.\-h}!list\-\_\-\-C\-O\-P\-Y@{list\-\_\-\-C\-O\-P\-Y}}
+\index{list\-\_\-\-C\-O\-P\-Y@{list\-\_\-\-C\-O\-P\-Y}!list.h@{list.\-h}}
+\paragraph[{list\-\_\-\-C\-O\-P\-Y}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$($\ast$ list\-\_\-\-C\-O\-P\-Y)(void $\ast$dest, const void $\ast$element, size\-\_\-t size)}}\label{a00010_a17ecf184324f5152136d35a721def4b3}
+
+
+callback function to clone an element 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & the destination of the copy \\
+\hline
+{\em element} & the element to copy \\
+\hline
+{\em size} & size of the element \\
+\hline
+{\em returns} & pointer to destination \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file list.\-h.
+
+\hypertarget{a00010_af9f798ca7814dd1b5ef32b7ecfa7462f}{\index{list.\-h@{list.\-h}!list\-\_\-\-D\-E\-S\-T\-R\-O\-Y@{list\-\_\-\-D\-E\-S\-T\-R\-O\-Y}}
+\index{list\-\_\-\-D\-E\-S\-T\-R\-O\-Y@{list\-\_\-\-D\-E\-S\-T\-R\-O\-Y}!list.h@{list.\-h}}
+\paragraph[{list\-\_\-\-D\-E\-S\-T\-R\-O\-Y}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ list\-\_\-\-D\-E\-S\-T\-R\-O\-Y)(void $\ast$element)}}\label{a00010_af9f798ca7814dd1b5ef32b7ecfa7462f}
+
+
+callback function to destroy an element 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & the destroyable element \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 47 of file list.\-h.
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{a00010_ac30216cf9b9cdf221aa68f1e2f819d9a}{\index{list.\-h@{list.\-h}!list\-\_\-add\-\_\-element@{list\-\_\-add\-\_\-element}}
+\index{list\-\_\-add\-\_\-element@{list\-\_\-add\-\_\-element}!list.h@{list.\-h}}
+\paragraph[{list\-\_\-add\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void list\-\_\-add\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{list, }
+\item[{const void $\ast$}]{element}
+\end{DoxyParamCaption}
+)}}\label{a00010_ac30216cf9b9cdf221aa68f1e2f819d9a}
+Add a new element to the list
+
+The element will be copied The element will be copied with the copy function which was given during initialization. This function insert the element to the begining of the list 
+\begin{DoxyParams}{Parameters}
+{\em list} & list to increase \\
+\hline
+{\em element} & the element to push \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00010_aed56e847043db6a0171561029b2d2b1e}{\index{list.\-h@{list.\-h}!list\-\_\-concat\-\_\-list@{list\-\_\-concat\-\_\-list}}
+\index{list\-\_\-concat\-\_\-list@{list\-\_\-concat\-\_\-list}!list.h@{list.\-h}}
+\paragraph[{list\-\_\-concat\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}void list\-\_\-concat\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{dest, }
+\item[{const {\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{source}
+\end{DoxyParamCaption}
+)}}\label{a00010_aed56e847043db6a0171561029b2d2b1e}
+Concatenate two list. 
+\begin{DoxyParams}{Parameters}
+{\em dest} & list to extends \\
+\hline
+{\em source} & list which is the source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function does not copy the source list, only makes connection between theme. 
+\end{DoxyWarning}
+\hypertarget{a00010_ab993127d4cd88ea8e379c4448e33dd07}{\index{list.\-h@{list.\-h}!list\-\_\-copy@{list\-\_\-copy}}
+\index{list\-\_\-copy@{list\-\_\-copy}!list.h@{list.\-h}}
+\paragraph[{list\-\_\-copy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf list\-\_\-\-L\-I\-S\-T} list\-\_\-copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}}\label{a00010_ab993127d4cd88ea8e379c4448e33dd07}
+
+\begin{DoxyParams}{Parameters}
+{\em list,\-:} & List to copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a copy of the input list 
+\end{DoxyReturn}
+\hypertarget{a00010_a8a7dff7af74ccfabc9997d1505e1cb3a}{\index{list.\-h@{list.\-h}!list\-\_\-destroy@{list\-\_\-destroy}}
+\index{list\-\_\-destroy@{list\-\_\-destroy}!list.h@{list.\-h}}
+\paragraph[{list\-\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}void list\-\_\-destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}}\label{a00010_a8a7dff7af74ccfabc9997d1505e1cb3a}
+Free the memory of the current list \hypertarget{a00010_aa55f63880ae1e6ea175c26ed2e6e2da2}{\index{list.\-h@{list.\-h}!list\-\_\-element\-\_\-size@{list\-\_\-element\-\_\-size}}
+\index{list\-\_\-element\-\_\-size@{list\-\_\-element\-\_\-size}!list.h@{list.\-h}}
+\paragraph[{list\-\_\-element\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned list\-\_\-element\-\_\-size (
+\begin{DoxyParamCaption}
+\item[{const {\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}}\label{a00010_aa55f63880ae1e6ea175c26ed2e6e2da2}
+Returns the size of the element in the list. 
+\begin{DoxyParams}{Parameters}
+{\em list} & the given list \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00010_a699a1a35f9054c6dc82ce9ee1845843f}{\index{list.\-h@{list.\-h}!list\-\_\-init\-\_\-like@{list\-\_\-init\-\_\-like}}
+\index{list\-\_\-init\-\_\-like@{list\-\_\-init\-\_\-like}!list.h@{list.\-h}}
+\paragraph[{list\-\_\-init\-\_\-like}]{\setlength{\rightskip}{0pt plus 5cm}void list\-\_\-init\-\_\-like (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{list, }
+\item[{const {\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{other}
+\end{DoxyParamCaption}
+)}}\label{a00010_a699a1a35f9054c6dc82ce9ee1845843f}
+Initialize a list like another one. 
+\begin{DoxyParams}{Parameters}
+{\em list,\-:} & list to initialize \\
+\hline
+{\em other,\-:} & list to clone basic structure \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00010_a1d2b26917d529007b957a4643c2cefa4}{\index{list.\-h@{list.\-h}!list\-\_\-init\-\_\-list@{list\-\_\-init\-\_\-list}}
+\index{list\-\_\-init\-\_\-list@{list\-\_\-init\-\_\-list}!list.h@{list.\-h}}
+\paragraph[{list\-\_\-init\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}void list\-\_\-init\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{list, }
+\item[{unsigned}]{element\-\_\-size, }
+\item[{{\bf list\-\_\-\-D\-E\-S\-T\-R\-O\-Y}}]{destroy\-\_\-func, }
+\item[{{\bf list\-\_\-\-C\-O\-P\-Y}}]{copy\-\_\-func}
+\end{DoxyParamCaption}
+)}}\label{a00010_a1d2b26917d529007b957a4643c2cefa4}
+Initialize function for the list 
+\begin{DoxyParams}{Parameters}
+{\em element\-\_\-size} & the size of one element in the list \\
+\hline
+{\em list} & the list to initialize \\
+\hline
+{\em destroy\-\_\-func} & Destroy function for an element. If this pointer is N\-U\-L\-L \\
+\hline
+{\em copy\-\_\-func} & copy function for an element. If this pointer is N\-U\-L\-L the default behavior is memcpy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00010_a9cbeca339af8257f88a466490d02b818}{\index{list.\-h@{list.\-h}!list\-\_\-is\-\_\-empty@{list\-\_\-is\-\_\-empty}}
+\index{list\-\_\-is\-\_\-empty@{list\-\_\-is\-\_\-empty}!list.h@{list.\-h}}
+\paragraph[{list\-\_\-is\-\_\-empty}]{\setlength{\rightskip}{0pt plus 5cm}bool list\-\_\-is\-\_\-empty (
+\begin{DoxyParamCaption}
+\item[{const {\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}}\label{a00010_a9cbeca339af8257f88a466490d02b818}
+Returns true if the list is empty 
+\begin{DoxyParams}{Parameters}
+{\em list} & the given list \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00010_a02924a0a3efce2aa3a6b6f90d788e6f4}{\index{list.\-h@{list.\-h}!list\-\_\-revert@{list\-\_\-revert}}
+\index{list\-\_\-revert@{list\-\_\-revert}!list.h@{list.\-h}}
+\paragraph[{list\-\_\-revert}]{\setlength{\rightskip}{0pt plus 5cm}void list\-\_\-revert (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}}\label{a00010_a02924a0a3efce2aa3a6b6f90d788e6f4}
+Revert the order of the list. This list representation is a chained list, but the chaining is only done to one direction. Sometimes it is not enough, but it has better performance. To solve some problem sometimes it is enough if we can revert the list. This function change the directio of the elements, and in that way the first element will be the last and the last will be the first. 
+\begin{DoxyParams}{Parameters}
+{\em list,\-:} & list to revert \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00010_ad45f8ded6762e1de3627829064d9b5e9}{\index{list.\-h@{list.\-h}!list\-\_\-size@{list\-\_\-size}}
+\index{list\-\_\-size@{list\-\_\-size}!list.h@{list.\-h}}
+\paragraph[{list\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned list\-\_\-size (
+\begin{DoxyParamCaption}
+\item[{const {\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}}\label{a00010_ad45f8ded6762e1de3627829064d9b5e9}
+Returns the size of the given list. 
+\begin{DoxyParams}{Parameters}
+{\em list} & the given list \\
+\hline
+\end{DoxyParams}

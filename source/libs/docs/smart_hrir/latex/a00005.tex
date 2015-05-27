@@ -1,0 +1,228 @@
+\hypertarget{a00005}{\subsection{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/smart\-\_\-hrir/hrir\-\_\-mutations.h File Reference}
+\label{a00005}\index{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/smart\-\_\-hrir/hrir\-\_\-mutations.\-h@{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/smart\-\_\-hrir/hrir\-\_\-mutations.\-h}}
+}
+{\ttfamily \#include $<$ai\-\_\-evol/list.\-h$>$}\\*
+{\ttfamily \#include $<$ai\-\_\-evol/priority\-\_\-queue.\-h$>$}\\*
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00005_ac26fc6e9ac49a6a0a69537b0b0d0ae82}{hrir\-\_\-mutations\-\_\-set\-\_\-parameters} (unsigned element\-\_\-to\-\_\-compare, double gaussian\-\_\-inc\-\_\-step, double gaussian\-\_\-dec\-\_\-step)
+\item 
+list\-\_\-\-L\-I\-S\-T \hyperlink{a00005_a0626d7e1b29015e79d2a1c53043a32ff}{hrir\-\_\-mutations\-\_\-gaussian\-\_\-avg} (priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$population, unsigned level)
+\begin{DoxyCompactList}\small\item\em Mutation for Gaussian parameter. Get the avg of the bests. \end{DoxyCompactList}\item 
+list\-\_\-\-L\-I\-S\-T \hyperlink{a00005_ab596bbc8fae02639cd5a46322015f66b}{hrir\-\_\-mutations\-\_\-gaussian\-\_\-max} (priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$population, unsigned level)
+\begin{DoxyCompactList}\small\item\em Mutation for Gaussian parameter. Get the max of the bests. \end{DoxyCompactList}\item 
+list\-\_\-\-L\-I\-S\-T \hyperlink{a00005_a1127830c419620d7078e6fdf910d48bb}{hrir\-\_\-mutations\-\_\-gaussian\-\_\-min} (priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$population, unsigned level)
+\begin{DoxyCompactList}\small\item\em Mutation for Gaussian parameter. Get the min of the bests. \end{DoxyCompactList}\item 
+list\-\_\-\-L\-I\-S\-T \hyperlink{a00005_a3310c1cb3a9094f50d1a0f5091cc8253}{hrir\-\_\-mutations\-\_\-gaussian\-\_\-inc} (priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$population, unsigned level)
+\begin{DoxyCompactList}\small\item\em Mutation for Gaussian parameter. Increase the gaussian param. \end{DoxyCompactList}\item 
+list\-\_\-\-L\-I\-S\-T \hyperlink{a00005_afccdc11049cb6ca8d828f0071716c878}{hrir\-\_\-mutations\-\_\-gaussian\-\_\-dec} (priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$population, unsigned level)
+\begin{DoxyCompactList}\small\item\em Mutation for Gaussian parameter. Decriese the gaussian param. \end{DoxyCompactList}\item 
+list\-\_\-\-L\-I\-S\-T \hyperlink{a00005_adcc751e22e744f364f6641e17e3649ab}{hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-inc} (priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$population, unsigned level)
+\begin{DoxyCompactList}\small\item\em Mutation for the filter size. Incriese the filter size. \end{DoxyCompactList}\item 
+list\-\_\-\-L\-I\-S\-T \hyperlink{a00005_a2634837fb63928dae2f05626e8176a68}{hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-dec} (priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$population, unsigned level)
+\begin{DoxyCompactList}\small\item\em Mutation for the filter size. Decriese the filter size. \end{DoxyCompactList}\item 
+list\-\_\-\-L\-I\-S\-T \hyperlink{a00005_a456498bd6ef84e84e59fcdfc785a5a94}{hrir\-\_\-mutations\-\_\-random\-\_\-scale} (priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$population, unsigned level)
+\begin{DoxyCompactList}\small\item\em Random mutation. Randomize the scale function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+File which contains mutations for hrir. 
+
+Definition in file \hyperlink{a00005_source}{hrir\-\_\-mutations.\-h}.
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{a00005_a2634837fb63928dae2f05626e8176a68}{\index{hrir\-\_\-mutations.\-h@{hrir\-\_\-mutations.\-h}!hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-dec@{hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-dec}}
+\index{hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-dec@{hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-dec}!hrir_mutations.h@{hrir\-\_\-mutations.\-h}}
+\paragraph[{hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-dec}]{\setlength{\rightskip}{0pt plus 5cm}list\-\_\-\-L\-I\-S\-T hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-dec (
+\begin{DoxyParamCaption}
+\item[{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$}]{population, }
+\item[{unsigned}]{level}
+\end{DoxyParamCaption}
+)}}\label{a00005_a2634837fb63928dae2f05626e8176a68}
+
+
+Mutation for the filter size. Decriese the filter size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & the population \\
+\hline
+{\em level,\-:} & This parameter has no effect to this mutation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of the new elements. 
+\end{DoxyReturn}
+\hypertarget{a00005_adcc751e22e744f364f6641e17e3649ab}{\index{hrir\-\_\-mutations.\-h@{hrir\-\_\-mutations.\-h}!hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-inc@{hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-inc}}
+\index{hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-inc@{hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-inc}!hrir_mutations.h@{hrir\-\_\-mutations.\-h}}
+\paragraph[{hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-inc}]{\setlength{\rightskip}{0pt plus 5cm}list\-\_\-\-L\-I\-S\-T hrir\-\_\-mutations\-\_\-filter\-\_\-size\-\_\-inc (
+\begin{DoxyParamCaption}
+\item[{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$}]{population, }
+\item[{unsigned}]{level}
+\end{DoxyParamCaption}
+)}}\label{a00005_adcc751e22e744f364f6641e17e3649ab}
+
+
+Mutation for the filter size. Incriese the filter size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & the population \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of the new elements. 
+\end{DoxyReturn}
+\hypertarget{a00005_a0626d7e1b29015e79d2a1c53043a32ff}{\index{hrir\-\_\-mutations.\-h@{hrir\-\_\-mutations.\-h}!hrir\-\_\-mutations\-\_\-gaussian\-\_\-avg@{hrir\-\_\-mutations\-\_\-gaussian\-\_\-avg}}
+\index{hrir\-\_\-mutations\-\_\-gaussian\-\_\-avg@{hrir\-\_\-mutations\-\_\-gaussian\-\_\-avg}!hrir_mutations.h@{hrir\-\_\-mutations.\-h}}
+\paragraph[{hrir\-\_\-mutations\-\_\-gaussian\-\_\-avg}]{\setlength{\rightskip}{0pt plus 5cm}list\-\_\-\-L\-I\-S\-T hrir\-\_\-mutations\-\_\-gaussian\-\_\-avg (
+\begin{DoxyParamCaption}
+\item[{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$}]{population, }
+\item[{unsigned}]{level}
+\end{DoxyParamCaption}
+)}}\label{a00005_a0626d7e1b29015e79d2a1c53043a32ff}
+
+
+Mutation for Gaussian parameter. Get the avg of the bests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & the population \\
+\hline
+{\em level,\-:} & This parameter has no effect to this mutation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of the new elements. 
+\end{DoxyReturn}
+\hypertarget{a00005_afccdc11049cb6ca8d828f0071716c878}{\index{hrir\-\_\-mutations.\-h@{hrir\-\_\-mutations.\-h}!hrir\-\_\-mutations\-\_\-gaussian\-\_\-dec@{hrir\-\_\-mutations\-\_\-gaussian\-\_\-dec}}
+\index{hrir\-\_\-mutations\-\_\-gaussian\-\_\-dec@{hrir\-\_\-mutations\-\_\-gaussian\-\_\-dec}!hrir_mutations.h@{hrir\-\_\-mutations.\-h}}
+\paragraph[{hrir\-\_\-mutations\-\_\-gaussian\-\_\-dec}]{\setlength{\rightskip}{0pt plus 5cm}list\-\_\-\-L\-I\-S\-T hrir\-\_\-mutations\-\_\-gaussian\-\_\-dec (
+\begin{DoxyParamCaption}
+\item[{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$}]{population, }
+\item[{unsigned}]{level}
+\end{DoxyParamCaption}
+)}}\label{a00005_afccdc11049cb6ca8d828f0071716c878}
+
+
+Mutation for Gaussian parameter. Decriese the gaussian param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & the population \\
+\hline
+{\em level,\-:} & Due to this parameter the decrement value became 10\% less. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of the new elements. 
+\end{DoxyReturn}
+\hypertarget{a00005_a3310c1cb3a9094f50d1a0f5091cc8253}{\index{hrir\-\_\-mutations.\-h@{hrir\-\_\-mutations.\-h}!hrir\-\_\-mutations\-\_\-gaussian\-\_\-inc@{hrir\-\_\-mutations\-\_\-gaussian\-\_\-inc}}
+\index{hrir\-\_\-mutations\-\_\-gaussian\-\_\-inc@{hrir\-\_\-mutations\-\_\-gaussian\-\_\-inc}!hrir_mutations.h@{hrir\-\_\-mutations.\-h}}
+\paragraph[{hrir\-\_\-mutations\-\_\-gaussian\-\_\-inc}]{\setlength{\rightskip}{0pt plus 5cm}list\-\_\-\-L\-I\-S\-T hrir\-\_\-mutations\-\_\-gaussian\-\_\-inc (
+\begin{DoxyParamCaption}
+\item[{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$}]{population, }
+\item[{unsigned}]{level}
+\end{DoxyParamCaption}
+)}}\label{a00005_a3310c1cb3a9094f50d1a0f5091cc8253}
+
+
+Mutation for Gaussian parameter. Increase the gaussian param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & the population \\
+\hline
+{\em level,\-:} & Due to this parameter the increment value became 10\% less. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of the new elements. 
+\end{DoxyReturn}
+\hypertarget{a00005_ab596bbc8fae02639cd5a46322015f66b}{\index{hrir\-\_\-mutations.\-h@{hrir\-\_\-mutations.\-h}!hrir\-\_\-mutations\-\_\-gaussian\-\_\-max@{hrir\-\_\-mutations\-\_\-gaussian\-\_\-max}}
+\index{hrir\-\_\-mutations\-\_\-gaussian\-\_\-max@{hrir\-\_\-mutations\-\_\-gaussian\-\_\-max}!hrir_mutations.h@{hrir\-\_\-mutations.\-h}}
+\paragraph[{hrir\-\_\-mutations\-\_\-gaussian\-\_\-max}]{\setlength{\rightskip}{0pt plus 5cm}list\-\_\-\-L\-I\-S\-T hrir\-\_\-mutations\-\_\-gaussian\-\_\-max (
+\begin{DoxyParamCaption}
+\item[{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$}]{population, }
+\item[{unsigned}]{level}
+\end{DoxyParamCaption}
+)}}\label{a00005_ab596bbc8fae02639cd5a46322015f66b}
+
+
+Mutation for Gaussian parameter. Get the max of the bests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & the population \\
+\hline
+{\em level,\-:} & This parameter has no effect to this mutation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of the new elements. 
+\end{DoxyReturn}
+\hypertarget{a00005_a1127830c419620d7078e6fdf910d48bb}{\index{hrir\-\_\-mutations.\-h@{hrir\-\_\-mutations.\-h}!hrir\-\_\-mutations\-\_\-gaussian\-\_\-min@{hrir\-\_\-mutations\-\_\-gaussian\-\_\-min}}
+\index{hrir\-\_\-mutations\-\_\-gaussian\-\_\-min@{hrir\-\_\-mutations\-\_\-gaussian\-\_\-min}!hrir_mutations.h@{hrir\-\_\-mutations.\-h}}
+\paragraph[{hrir\-\_\-mutations\-\_\-gaussian\-\_\-min}]{\setlength{\rightskip}{0pt plus 5cm}list\-\_\-\-L\-I\-S\-T hrir\-\_\-mutations\-\_\-gaussian\-\_\-min (
+\begin{DoxyParamCaption}
+\item[{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$}]{population, }
+\item[{unsigned}]{level}
+\end{DoxyParamCaption}
+)}}\label{a00005_a1127830c419620d7078e6fdf910d48bb}
+
+
+Mutation for Gaussian parameter. Get the min of the bests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & the population \\
+\hline
+{\em level,\-:} & This parameter has no effect to this mutation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of the new elements. 
+\end{DoxyReturn}
+\hypertarget{a00005_a456498bd6ef84e84e59fcdfc785a5a94}{\index{hrir\-\_\-mutations.\-h@{hrir\-\_\-mutations.\-h}!hrir\-\_\-mutations\-\_\-random\-\_\-scale@{hrir\-\_\-mutations\-\_\-random\-\_\-scale}}
+\index{hrir\-\_\-mutations\-\_\-random\-\_\-scale@{hrir\-\_\-mutations\-\_\-random\-\_\-scale}!hrir_mutations.h@{hrir\-\_\-mutations.\-h}}
+\paragraph[{hrir\-\_\-mutations\-\_\-random\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}list\-\_\-\-L\-I\-S\-T hrir\-\_\-mutations\-\_\-random\-\_\-scale (
+\begin{DoxyParamCaption}
+\item[{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E $\ast$}]{population, }
+\item[{unsigned}]{level}
+\end{DoxyParamCaption}
+)}}\label{a00005_a456498bd6ef84e84e59fcdfc785a5a94}
+
+
+Random mutation. Randomize the scale function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & the population \\
+\hline
+{\em level,\-:} & This parameter has no effect to this mutation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of the new elements. 
+\end{DoxyReturn}
+\hypertarget{a00005_ac26fc6e9ac49a6a0a69537b0b0d0ae82}{\index{hrir\-\_\-mutations.\-h@{hrir\-\_\-mutations.\-h}!hrir\-\_\-mutations\-\_\-set\-\_\-parameters@{hrir\-\_\-mutations\-\_\-set\-\_\-parameters}}
+\index{hrir\-\_\-mutations\-\_\-set\-\_\-parameters@{hrir\-\_\-mutations\-\_\-set\-\_\-parameters}!hrir_mutations.h@{hrir\-\_\-mutations.\-h}}
+\paragraph[{hrir\-\_\-mutations\-\_\-set\-\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}void hrir\-\_\-mutations\-\_\-set\-\_\-parameters (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{element\-\_\-to\-\_\-compare, }
+\item[{double}]{gaussian\-\_\-inc\-\_\-step, }
+\item[{double}]{gaussian\-\_\-dec\-\_\-step}
+\end{DoxyParamCaption}
+)}}\label{a00005_ac26fc6e9ac49a6a0a69537b0b0d0ae82}
+Setup of mutation functions global parameters. 
+\begin{DoxyParams}{Parameters}
+{\em element\-\_\-to\-\_\-compare} & The number of top elements to use during mutations, like avg, max, ... \mbox{[}default\-: 2\mbox{]} \\
+\hline
+{\em gaussian\-\_\-inc\-\_\-step} & Measure of increasing in case of gaussian increase mutation. \mbox{[}default\-: 0.\-3\mbox{]} \\
+\hline
+{\em gaussian\-\_\-dec\-\_\-step} & Measure of decreasing in case of gaussian decreasing mutation. \mbox{[}default\-: \mbox{[}0.\-2\mbox{]} \\
+\hline
+\end{DoxyParams}

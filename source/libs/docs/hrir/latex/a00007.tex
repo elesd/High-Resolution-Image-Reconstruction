@@ -1,0 +1,87 @@
+\hypertarget{a00007}{\subsection{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/dumper.h File Reference}
+\label{a00007}\index{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/dumper.\-h@{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/dumper.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00007_a963dec961ab29f9094b3df41dc59916c}{\#define \hyperlink{a00007_a963dec961ab29f9094b3df41dc59916c}{D\-U\-M\-P\-E\-R\-\_\-\-O\-K}~0}\label{a00007_a963dec961ab29f9094b3df41dc59916c}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+\hypertarget{a00007_aba952530ea6188d27c47d40d00493dd0}{\#define \hyperlink{a00007_aba952530ea6188d27c47d40d00493dd0}{D\-U\-M\-P\-E\-R\-\_\-\-F\-I\-L\-E\-\_\-\-O\-P\-E\-N\-\_\-\-E\-R\-R\-O\-R}~-\/1}\label{a00007_aba952530ea6188d27c47d40d00493dd0}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+\hypertarget{a00007_a86903e1939ee148d83c1784423c70f2c}{\#define \hyperlink{a00007_a86903e1939ee148d83c1784423c70f2c}{D\-U\-M\-P\-E\-R\-\_\-\-W\-R\-I\-T\-E\-\_\-\-E\-R\-R\-O\-R}~-\/2}\label{a00007_a86903e1939ee148d83c1784423c70f2c}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+\#define {\bfseries D\-U\-M\-P\-E\-R\-\_\-\-T\-R\-A\-C\-E\-\_\-\-I\-M\-A\-G\-E}(data, width, height)
+\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00007_af6536bdd6757c29a21b351fe6f03e9ca}{typedef int \hyperlink{a00007_af6536bdd6757c29a21b351fe6f03e9ca}{dumper\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-O\-D\-E}}\label{a00007_af6536bdd6757c29a21b351fe6f03e9ca}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00007_af6536bdd6757c29a21b351fe6f03e9ca}{dumper\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-O\-D\-E} \hyperlink{a00007_af4f6f8f66f2106a07ff5262b18136350}{dumper\-\_\-trace\-\_\-to\-\_\-file} (const char $\ast$file\-\_\-name, const void $\ast$data, unsigned length)
+\begin{DoxyCompactList}\small\item\em Dump the file content to file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Functions for dump data to a file 
+
+Definition in file \hyperlink{a00007_source}{dumper.\-h}.
+
+
+
+\subsubsection{Macro Definition Documentation}
+\hypertarget{a00007_a3186df10cbb082de2b4310c7fa31b21f}{\index{dumper.\-h@{dumper.\-h}!D\-U\-M\-P\-E\-R\-\_\-\-T\-R\-A\-C\-E\-\_\-\-I\-M\-A\-G\-E@{D\-U\-M\-P\-E\-R\-\_\-\-T\-R\-A\-C\-E\-\_\-\-I\-M\-A\-G\-E}}
+\index{D\-U\-M\-P\-E\-R\-\_\-\-T\-R\-A\-C\-E\-\_\-\-I\-M\-A\-G\-E@{D\-U\-M\-P\-E\-R\-\_\-\-T\-R\-A\-C\-E\-\_\-\-I\-M\-A\-G\-E}!dumper.h@{dumper.\-h}}
+\paragraph[{D\-U\-M\-P\-E\-R\-\_\-\-T\-R\-A\-C\-E\-\_\-\-I\-M\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-U\-M\-P\-E\-R\-\_\-\-T\-R\-A\-C\-E\-\_\-\-I\-M\-A\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{data, }
+\item[{}]{width, }
+\item[{}]{height}
+\end{DoxyParamCaption}
+)}}\label{a00007_a3186df10cbb082de2b4310c7fa31b21f}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{ \(\backslash\)
+  char TRACE\_IMAGE\_tmp[128];snprintf(TRACE\_IMAGE\_tmp, 128, \textcolor{stringliteral}{"%s\_%d\_%d"}, #data, 
+      width, height);\(\backslash\)
+  dumper\_trace\_to\_file(TRACE\_IMAGE\_tmp, data, width * height);\}
+\end{DoxyCode}
+
+
+Definition at line 36 of file dumper.\-h.
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{a00007_af4f6f8f66f2106a07ff5262b18136350}{\index{dumper.\-h@{dumper.\-h}!dumper\-\_\-trace\-\_\-to\-\_\-file@{dumper\-\_\-trace\-\_\-to\-\_\-file}}
+\index{dumper\-\_\-trace\-\_\-to\-\_\-file@{dumper\-\_\-trace\-\_\-to\-\_\-file}!dumper.h@{dumper.\-h}}
+\paragraph[{dumper\-\_\-trace\-\_\-to\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dumper\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-O\-D\-E} dumper\-\_\-trace\-\_\-to\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\-\_\-name, }
+\item[{const void $\ast$}]{data, }
+\item[{unsigned}]{length}
+\end{DoxyParamCaption}
+)}}\label{a00007_af4f6f8f66f2106a07ff5262b18136350}
+
+
+Dump the file content to file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\-\_\-name} & output file name \\
+\hline
+{\em data} & the data to print out \\
+\hline
+{\em length} & length of data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dumper error code 
+\end{DoxyReturn}

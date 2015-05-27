@@ -1,0 +1,180 @@
+\hypertarget{a00008}{\subsection{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/ai\-\_\-evol/ai\-\_\-evol.h File Reference}
+\label{a00008}\index{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/ai\-\_\-evol/ai\-\_\-evol.\-h@{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/ai\-\_\-evol/ai\-\_\-evol.\-h}}
+}
+
+
+This file contains an evolution algorithm implementation.  
+
+
+{\ttfamily \#include \char`\"{}list.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}priority\-\_\-queue.\-h\char`\"{}}\\*
+\subsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{a00001}{ai\-\_\-evol\-\_\-\-E\-L\-E\-M\-E\-N\-T}
+\item 
+struct \hyperlink{a00003}{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}
+\item 
+struct \hyperlink{a00002}{ai\-\_\-evol\-\_\-\-M\-U\-T\-A\-T\-I\-O\-N\-\_\-\-E\-L\-E\-M\-E\-N\-T}
+\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00008_a718dd70dd5597e1668aeeb7cd49fed03}{typedef int \hyperlink{a00008_a718dd70dd5597e1668aeeb7cd49fed03}{ai\-\_\-evol\-\_\-\-M\-U\-T\-A\-T\-I\-O\-N\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-I\-D}}\label{a00008_a718dd70dd5597e1668aeeb7cd49fed03}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{a00008_a6710253499441c289fb8751c83221e38}{ai\-\_\-evol\-\_\-\-D\-E\-S\-T\-R\-O\-Y\-\_\-\-F\-U\-N\-C} )(void $\ast$element)
+\begin{DoxyCompactList}\small\item\em callback function to destroy an element \end{DoxyCompactList}\item 
+typedef int($\ast$ \hyperlink{a00008_a40f90c3ffcebe63f84cf844eea9167c5}{ai\-\_\-evol\-\_\-\-R\-A\-N\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N} )(const \hyperlink{a00001}{ai\-\_\-evol\-\_\-\-E\-L\-E\-M\-E\-N\-T} $\ast$element)
+\item 
+typedef \hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T}($\ast$ \hyperlink{a00008_a396a21836c00e192def7ee47518bd001}{ai\-\_\-evol\-\_\-\-M\-U\-T\-A\-T\-I\-O\-N} )(\hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$population, unsigned level)
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00003}{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E} \hyperlink{a00008_a61910738e890b3251c61720e54b6d18c}{ai\-\_\-evol\-\_\-create\-\_\-state} (\hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} $\ast$mutations, \hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$population, unsigned keep\-\_\-counter, unsigned iteration\-\_\-per\-\_\-level, \hyperlink{a00008_a40f90c3ffcebe63f84cf844eea9167c5}{ai\-\_\-evol\-\_\-\-R\-A\-N\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N} rank\-\_\-function, \hyperlink{a00008_a6710253499441c289fb8751c83221e38}{ai\-\_\-evol\-\_\-\-D\-E\-S\-T\-R\-O\-Y\-\_\-\-F\-U\-N\-C} destroy\-\_\-func)
+\item 
+\hyperlink{a00003}{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E} \hyperlink{a00008_a97a06b871a13fd905db646fe0b696e0a}{ai\-\_\-evol\-\_\-iterate} (const \hyperlink{a00003}{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E} $\ast$state)
+\item 
+\hyperlink{a00003}{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E} \hyperlink{a00008_ab85b84d8921124d6e274dc719a3f79e5}{ai\-\_\-evol\-\_\-start} (const \hyperlink{a00003}{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E} $\ast$start\-\_\-phase, const unsigned max\-\_\-iteration, const int target\-\_\-value)
+\item 
+void \hyperlink{a00008_ac058af5bcdd4f88db91b9b1c2ee08d91}{ai\-\_\-evol\-\_\-destroy\-\_\-state} (\hyperlink{a00003}{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E} $\ast$state)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+This file contains an evolution algorithm implementation. 
+
+Definition in file \hyperlink{a00008_source}{ai\-\_\-evol.\-h}.
+
+
+
+\subsubsection{Typedef Documentation}
+\hypertarget{a00008_a6710253499441c289fb8751c83221e38}{\index{ai\-\_\-evol.\-h@{ai\-\_\-evol.\-h}!ai\-\_\-evol\-\_\-\-D\-E\-S\-T\-R\-O\-Y\-\_\-\-F\-U\-N\-C@{ai\-\_\-evol\-\_\-\-D\-E\-S\-T\-R\-O\-Y\-\_\-\-F\-U\-N\-C}}
+\index{ai\-\_\-evol\-\_\-\-D\-E\-S\-T\-R\-O\-Y\-\_\-\-F\-U\-N\-C@{ai\-\_\-evol\-\_\-\-D\-E\-S\-T\-R\-O\-Y\-\_\-\-F\-U\-N\-C}!ai_evol.h@{ai\-\_\-evol.\-h}}
+\paragraph[{ai\-\_\-evol\-\_\-\-D\-E\-S\-T\-R\-O\-Y\-\_\-\-F\-U\-N\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ ai\-\_\-evol\-\_\-\-D\-E\-S\-T\-R\-O\-Y\-\_\-\-F\-U\-N\-C)(void $\ast$element)}}\label{a00008_a6710253499441c289fb8751c83221e38}
+
+
+callback function to destroy an element 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & the destroyable element \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file ai\-\_\-evol.\-h.
+
+\hypertarget{a00008_a396a21836c00e192def7ee47518bd001}{\index{ai\-\_\-evol.\-h@{ai\-\_\-evol.\-h}!ai\-\_\-evol\-\_\-\-M\-U\-T\-A\-T\-I\-O\-N@{ai\-\_\-evol\-\_\-\-M\-U\-T\-A\-T\-I\-O\-N}}
+\index{ai\-\_\-evol\-\_\-\-M\-U\-T\-A\-T\-I\-O\-N@{ai\-\_\-evol\-\_\-\-M\-U\-T\-A\-T\-I\-O\-N}!ai_evol.h@{ai\-\_\-evol.\-h}}
+\paragraph[{ai\-\_\-evol\-\_\-\-M\-U\-T\-A\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf list\-\_\-\-L\-I\-S\-T}($\ast$ ai\-\_\-evol\-\_\-\-M\-U\-T\-A\-T\-I\-O\-N)({\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$population, unsigned level)}}\label{a00008_a396a21836c00e192def7ee47518bd001}
+Mutation method. This function works on the population list. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em population} & the startup population \\
+\hline
+ & {\em level,\-:} & level of the mutation. Mutations can be work in different way on different levels. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list of \hyperlink{a00001}{ai\-\_\-evol\-\_\-\-E\-L\-E\-M\-E\-N\-T}, actually the list of the new elements. 
+\end{DoxyReturn}
+
+
+Definition at line 123 of file ai\-\_\-evol.\-h.
+
+\hypertarget{a00008_a40f90c3ffcebe63f84cf844eea9167c5}{\index{ai\-\_\-evol.\-h@{ai\-\_\-evol.\-h}!ai\-\_\-evol\-\_\-\-R\-A\-N\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N@{ai\-\_\-evol\-\_\-\-R\-A\-N\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}}
+\index{ai\-\_\-evol\-\_\-\-R\-A\-N\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N@{ai\-\_\-evol\-\_\-\-R\-A\-N\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}!ai_evol.h@{ai\-\_\-evol.\-h}}
+\paragraph[{ai\-\_\-evol\-\_\-\-R\-A\-N\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ ai\-\_\-evol\-\_\-\-R\-A\-N\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N)(const {\bf ai\-\_\-evol\-\_\-\-E\-L\-E\-M\-E\-N\-T} $\ast$element)}}\label{a00008_a40f90c3ffcebe63f84cf844eea9167c5}
+Function which calculates the rank of the current element.
+
+determines how much good the current element in the population. Actually this function contains the logic of the algorithm. 
+\begin{DoxyParams}{Parameters}
+{\em element} & pointer an element in the population \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the rank of the given element 
+\end{DoxyReturn}
+
+
+Definition at line 65 of file ai\-\_\-evol.\-h.
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{a00008_a61910738e890b3251c61720e54b6d18c}{\index{ai\-\_\-evol.\-h@{ai\-\_\-evol.\-h}!ai\-\_\-evol\-\_\-create\-\_\-state@{ai\-\_\-evol\-\_\-create\-\_\-state}}
+\index{ai\-\_\-evol\-\_\-create\-\_\-state@{ai\-\_\-evol\-\_\-create\-\_\-state}!ai_evol.h@{ai\-\_\-evol.\-h}}
+\paragraph[{ai\-\_\-evol\-\_\-create\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E} ai\-\_\-evol\-\_\-create\-\_\-state (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-\-L\-I\-S\-T} $\ast$}]{mutations, }
+\item[{{\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{population, }
+\item[{unsigned}]{keep\-\_\-counter, }
+\item[{unsigned}]{iteration\-\_\-per\-\_\-level, }
+\item[{{\bf ai\-\_\-evol\-\_\-\-R\-A\-N\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}}]{rank\-\_\-function, }
+\item[{{\bf ai\-\_\-evol\-\_\-\-D\-E\-S\-T\-R\-O\-Y\-\_\-\-F\-U\-N\-C}}]{destroy\-\_\-func}
+\end{DoxyParamCaption}
+)}}\label{a00008_a61910738e890b3251c61720e54b6d18c}
+Creates a new state based on the given values. 
+\begin{DoxyParams}{Parameters}
+{\em mutations} & list of mutation methodes (\hyperlink{a00008_a396a21836c00e192def7ee47518bd001}{ai\-\_\-evol\-\_\-\-M\-U\-T\-A\-T\-I\-O\-N}) \\
+\hline
+{\em population} & priority queue of \hyperlink{a00001}{ai\-\_\-evol\-\_\-\-E\-L\-E\-M\-E\-N\-T} \\
+\hline
+{\em keep\-\_\-counter} & number of population element which will be keeped between two iteration. \\
+\hline
+{\em iteration\-\_\-per\-\_\-level,\-:} & maximum number of iterations on one level \\
+\hline
+{\em rank\-\_\-function} & rank function to calculate an \hyperlink{a00001_a35a0ba554bf0676ec76c481e1468d835}{ai\-\_\-evol\-\_\-\-E\-L\-E\-M\-E\-N\-T.\-element}'s rank \\
+\hline
+{\em destroy\-\_\-func} & function to destroy an \hyperlink{a00001}{ai\-\_\-evol\-\_\-\-E\-L\-E\-M\-E\-N\-T}. If it is N\-U\-L\-L the default behavior is to free the \hyperlink{a00001_a35a0ba554bf0676ec76c481e1468d835}{ai\-\_\-evol\-\_\-\-E\-L\-E\-M\-E\-N\-T.\-element}. So actually the function's parameter is an ai\-\_\-evol\-\_\-\-E\-L\-E\-M\-E\-N\-T$\ast$. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new state 
+\end{DoxyReturn}
+\hypertarget{a00008_ac058af5bcdd4f88db91b9b1c2ee08d91}{\index{ai\-\_\-evol.\-h@{ai\-\_\-evol.\-h}!ai\-\_\-evol\-\_\-destroy\-\_\-state@{ai\-\_\-evol\-\_\-destroy\-\_\-state}}
+\index{ai\-\_\-evol\-\_\-destroy\-\_\-state@{ai\-\_\-evol\-\_\-destroy\-\_\-state}!ai_evol.h@{ai\-\_\-evol.\-h}}
+\paragraph[{ai\-\_\-evol\-\_\-destroy\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}void ai\-\_\-evol\-\_\-destroy\-\_\-state (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E} $\ast$}]{state}
+\end{DoxyParamCaption}
+)}}\label{a00008_ac058af5bcdd4f88db91b9b1c2ee08d91}
+Destroy the given state. 
+\begin{DoxyParams}{Parameters}
+{\em state} & Not N\-U\-L\-L state. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00008_a97a06b871a13fd905db646fe0b696e0a}{\index{ai\-\_\-evol.\-h@{ai\-\_\-evol.\-h}!ai\-\_\-evol\-\_\-iterate@{ai\-\_\-evol\-\_\-iterate}}
+\index{ai\-\_\-evol\-\_\-iterate@{ai\-\_\-evol\-\_\-iterate}!ai_evol.h@{ai\-\_\-evol.\-h}}
+\paragraph[{ai\-\_\-evol\-\_\-iterate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E} ai\-\_\-evol\-\_\-iterate (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E} $\ast$}]{state}
+\end{DoxyParamCaption}
+)}}\label{a00008_a97a06b871a13fd905db646fe0b696e0a}
+This function iterate from a start state to a new one. The function creates a new state, evaluates the current population, keep the bests instance and executes the mutation methods. 
+\begin{DoxyParams}{Parameters}
+{\em state} & the current state. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00008_ab85b84d8921124d6e274dc719a3f79e5}{\index{ai\-\_\-evol.\-h@{ai\-\_\-evol.\-h}!ai\-\_\-evol\-\_\-start@{ai\-\_\-evol\-\_\-start}}
+\index{ai\-\_\-evol\-\_\-start@{ai\-\_\-evol\-\_\-start}!ai_evol.h@{ai\-\_\-evol.\-h}}
+\paragraph[{ai\-\_\-evol\-\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E} ai\-\_\-evol\-\_\-start (
+\begin{DoxyParamCaption}
+\item[{const {\bf ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E} $\ast$}]{start\-\_\-phase, }
+\item[{const unsigned}]{max\-\_\-iteration, }
+\item[{const int}]{target\-\_\-value}
+\end{DoxyParamCaption}
+)}}\label{a00008_ab85b84d8921124d6e274dc719a3f79e5}
+Iterates from the start\-\_\-phase until we reach the target value, or goes over the max\-\_\-iteration. 
+\begin{DoxyParams}{Parameters}
+{\em start\-\_\-phase} & the starting phase \\
+\hline
+{\em max\-\_\-iteration} & the maximum number of iterations \\
+\hline
+{\em target\-\_\-value} & the target best value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The best result 
+\end{DoxyReturn}

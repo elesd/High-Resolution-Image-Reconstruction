@@ -1,0 +1,27 @@
+
+#!/bin/bash
+export PRO_NAME='SHRIR'
+
+script_dir=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
+
+
+#source files
+export SRC="$script_dir/source"
+
+#building directory
+export BUILD="$script_dir/build"
+
+# install path
+export INSTALL_DIR="$script_dir/../libs"
+
+alias cmake_d="cmake -DCMAKE_BUILD_TYPE=Debug"
+alias cmake_r="cmake -DCMAKE_BUILD_TYPE=Release"
+
+########################################################################
+
+echo "
+==================================
+Project: $PRO_NAME
+Source: $SRC
+"
+

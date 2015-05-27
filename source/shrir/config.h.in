@@ -1,0 +1,19 @@
+#define smart_hrir_VERSION_MAJOR @smart_hrir_VERSION_MAJOR@
+#define smart_hrir_VERSION_MINOR @smart_hrir_VERSION_MINOR@
+
+/**
+* @mainpage Smart High Resolution Image Reconstruction.
+* @section intro Introduction.
+* This project gives a framework to find the best parameters
+* for the HRIR Project. 
+*
+* As it is described in the HRIR project to find the best parameters
+* are difficult. In order to find this in this project an evolution
+* algorithm is used.
+*
+* The input of the algorithm is only few parameters, the basic population
+* and the mutations are given. The rank of the algorithm is the 
+* Peak Signal-to-Noise Ratio (psnr). The input of it the raw data of an
+* black and with image, and the result is a twice  bigger image which 
+* is created by the best parameter which is found.
+*/

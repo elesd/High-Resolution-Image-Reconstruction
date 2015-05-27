@@ -1,0 +1,95 @@
+\hypertarget{a00003}{\subsection{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E Struct Reference}
+\label{a00003}\index{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}}
+}
+
+
+{\ttfamily \#include $<$ai\-\_\-evol.\-h$>$}
+
+\subsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} \hyperlink{a00003_a1ecc1cb59a98ecb473aaa3f9bece314c}{mutations}
+\item 
+\hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} \hyperlink{a00003_a729b9f6da125fae3a756808aa6800b12}{population}
+\item 
+unsigned \hyperlink{a00003_a5583418f98233aa7dc9ce809fc68373f}{keep\-\_\-counter}
+\item 
+unsigned \hyperlink{a00003_aebb7070e519b1dfc35290d56844f52a7}{phase\-\_\-counter}
+\item 
+unsigned \hyperlink{a00003_a09b8e0c8752408132713a22b60f654e4}{iteration\-\_\-per\-\_\-level}
+\item 
+\hyperlink{a00008_a40f90c3ffcebe63f84cf844eea9167c5}{ai\-\_\-evol\-\_\-\-R\-A\-N\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N} \hyperlink{a00003_aaa7bfad69e416dc6acb8b7fb1e9689ab}{rank\-\_\-function}
+\item 
+\hyperlink{a00008_a6710253499441c289fb8751c83221e38}{ai\-\_\-evol\-\_\-\-D\-E\-S\-T\-R\-O\-Y\-\_\-\-F\-U\-N\-C} \hyperlink{a00003_a910eede8e95d587194d5e389f7ea0589}{destroy\-\_\-func}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+State description
+
+The descriptor of one iteration of the evolution algorithm 
+
+Definition at line 72 of file ai\-\_\-evol.\-h.
+
+
+
+\subsubsection{Field Documentation}
+\hypertarget{a00003_a910eede8e95d587194d5e389f7ea0589}{\index{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}!destroy\-\_\-func@{destroy\-\_\-func}}
+\index{destroy\-\_\-func@{destroy\-\_\-func}!ai_evol_STATE@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}}
+\paragraph[{destroy\-\_\-func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\-\_\-evol\-\_\-\-D\-E\-S\-T\-R\-O\-Y\-\_\-\-F\-U\-N\-C} ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E\-::destroy\-\_\-func}}\label{a00003_a910eede8e95d587194d5e389f7ea0589}
+Destroy function for the content of an \hyperlink{a00001}{ai\-\_\-evol\-\_\-\-E\-L\-E\-M\-E\-N\-T} \begin{DoxySeeAlso}{See Also}
+\hyperlink{a00001_a35a0ba554bf0676ec76c481e1468d835}{ai\-\_\-evol\-\_\-\-E\-L\-E\-M\-E\-N\-T.\-element} 
+\end{DoxySeeAlso}
+
+
+Definition at line 109 of file ai\-\_\-evol.\-h.
+
+\hypertarget{a00003_a09b8e0c8752408132713a22b60f654e4}{\index{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}!iteration\-\_\-per\-\_\-level@{iteration\-\_\-per\-\_\-level}}
+\index{iteration\-\_\-per\-\_\-level@{iteration\-\_\-per\-\_\-level}!ai_evol_STATE@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}}
+\paragraph[{iteration\-\_\-per\-\_\-level}]{\setlength{\rightskip}{0pt plus 5cm}unsigned ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E\-::iteration\-\_\-per\-\_\-level}}\label{a00003_a09b8e0c8752408132713a22b60f654e4}
+This member tell the algorithm how much iteration will be done on the same level. The first level is the 0. 
+
+Definition at line 98 of file ai\-\_\-evol.\-h.
+
+\hypertarget{a00003_a5583418f98233aa7dc9ce809fc68373f}{\index{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}!keep\-\_\-counter@{keep\-\_\-counter}}
+\index{keep\-\_\-counter@{keep\-\_\-counter}!ai_evol_STATE@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}}
+\paragraph[{keep\-\_\-counter}]{\setlength{\rightskip}{0pt plus 5cm}unsigned ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E\-::keep\-\_\-counter}}\label{a00003_a5583418f98233aa7dc9ce809fc68373f}
+The number of bests
+
+Who many element will be keep between two phase 
+
+Definition at line 87 of file ai\-\_\-evol.\-h.
+
+\hypertarget{a00003_a1ecc1cb59a98ecb473aaa3f9bece314c}{\index{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}!mutations@{mutations}}
+\index{mutations@{mutations}!ai_evol_STATE@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}}
+\paragraph[{mutations}]{\setlength{\rightskip}{0pt plus 5cm}{\bf list\-\_\-\-L\-I\-S\-T} ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E\-::mutations}}\label{a00003_a1ecc1cb59a98ecb473aaa3f9bece314c}
+list for the mutation functions. This list contatains \hyperlink{a00002}{ai\-\_\-evol\-\_\-\-M\-U\-T\-A\-T\-I\-O\-N\-\_\-\-E\-L\-E\-M\-E\-N\-T} objects. 
+
+Definition at line 78 of file ai\-\_\-evol.\-h.
+
+\hypertarget{a00003_aebb7070e519b1dfc35290d56844f52a7}{\index{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}!phase\-\_\-counter@{phase\-\_\-counter}}
+\index{phase\-\_\-counter@{phase\-\_\-counter}!ai_evol_STATE@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}}
+\paragraph[{phase\-\_\-counter}]{\setlength{\rightskip}{0pt plus 5cm}unsigned ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E\-::phase\-\_\-counter}}\label{a00003_aebb7070e519b1dfc35290d56844f52a7}
+The current phase id 
+
+Definition at line 91 of file ai\-\_\-evol.\-h.
+
+\hypertarget{a00003_a729b9f6da125fae3a756808aa6800b12}{\index{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}!population@{population}}
+\index{population@{population}!ai_evol_STATE@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}}
+\paragraph[{population}]{\setlength{\rightskip}{0pt plus 5cm}{\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E\-::population}}\label{a00003_a729b9f6da125fae3a756808aa6800b12}
+Stack for the population 
+
+Definition at line 82 of file ai\-\_\-evol.\-h.
+
+\hypertarget{a00003_aaa7bfad69e416dc6acb8b7fb1e9689ab}{\index{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}!rank\-\_\-function@{rank\-\_\-function}}
+\index{rank\-\_\-function@{rank\-\_\-function}!ai_evol_STATE@{ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E}}
+\paragraph[{rank\-\_\-function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\-\_\-evol\-\_\-\-R\-A\-N\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N} ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E\-::rank\-\_\-function}}\label{a00003_aaa7bfad69e416dc6acb8b7fb1e9689ab}
+function to calculate rank 
+
+Definition at line 103 of file ai\-\_\-evol.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/ai\-\_\-evol/\hyperlink{a00008}{ai\-\_\-evol.\-h}\end{DoxyCompactItemize}

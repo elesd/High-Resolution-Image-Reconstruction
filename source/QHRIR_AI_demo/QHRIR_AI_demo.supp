@@ -1,0 +1,44 @@
+{
+   image_amplifier_scale_to_origin[Memcheck:Cond]
+   Memcheck:Cond
+   fun:image_amplifier_scale_to_origin
+   fun:image_amplifier_details_up
+   fun:prepare_image
+   fun:do_reconstruction
+   fun:image_reconstruct_from_lower_image
+   fun:image_reconstruct_calculate_mse
+   fun:calc_rank
+   fun:calculate_rank
+   fun:ai_evol_iterate
+   fun:ai_evol_start
+   fun:smart_hrir_start_algorithm
+   fun:_ZN9SmartHrir11reconstructERK6QImage
+   fun:_ZN10MainWindow17on_psbRun_clickedEv
+   fun:_ZN10MainWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv
+   fun:_ZN10MainWindow11qt_metacallEN11QMetaObject4CallEiPPv
+   fun:_ZN11QMetaObject8metacallEP7QObjectNS_4CallEiPPv
+   fun:_ZN15QAbstractButton7clickedEb
+   obj:*
+}
+{
+   __mpn_mul_1[Memcheck:Value4]
+   Memcheck:Value4
+   fun:__mpn_mul_1
+   fun:hack_digit.12734
+   fun:__printf_fp
+   fun:vfprintf
+   fun:vsprintf
+   fun:debug_util_trace
+   fun:calc_rank
+   fun:calculate_rank
+   fun:ai_evol_iterate
+   fun:ai_evol_start
+   fun:smart_hrir_start_algorithm
+   fun:_ZN9SmartHrir11reconstructERK6QImage
+   fun:_ZN10MainWindow17on_psbRun_clickedEv
+   fun:_ZN10MainWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv
+   fun:_ZN10MainWindow11qt_metacallEN11QMetaObject4CallEiPPv
+   fun:_ZN11QMetaObject8metacallEP7QObjectNS_4CallEiPPv
+   fun:_ZN15QAbstractButton7clickedEb
+   obj:*
+}

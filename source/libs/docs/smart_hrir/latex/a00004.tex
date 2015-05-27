@@ -1,0 +1,76 @@
+\hypertarget{a00004}{\subsection{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/smart\-\_\-hrir/hrir\-\_\-ai.h File Reference}
+\label{a00004}\index{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/smart\-\_\-hrir/hrir\-\_\-ai.\-h@{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/smart\-\_\-hrir/hrir\-\_\-ai.\-h}}
+}
+{\ttfamily \#include $<$hrir/image\-\_\-reconstruct.\-h$>$}\\*
+{\ttfamily \#include $<$ai\-\_\-evol/ai\-\_\-evol.\-h$>$}\\*
+\subsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{a00001}{hrir\-\_\-ai\-\_\-\-E\-L\-E\-M\-E\-N\-T}
+\begin{DoxyCompactList}\small\item\em Element for the evolution algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E \hyperlink{a00004_a9f1b69c513955afd2b4598424e9fe0d5}{hrir\-\_\-ai\-\_\-create\-\_\-init\-\_\-state} (const image\-\_\-filter\-\_\-\-I\-M\-G $\ast$original\-\_\-image, unsigned keep\-\_\-counter, unsigned iteration\-\_\-per\-\_\-level, unsigned redundancy)
+\begin{DoxyCompactList}\small\item\em Create the initial state of the evolution alg. \end{DoxyCompactList}\item 
+ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E \hyperlink{a00004_a58cf4d2cd73bd42bcfe5798aaa6c9956}{hrir\-\_\-ai\-\_\-iterate} (const ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E $\ast$phase)
+\begin{DoxyCompactList}\small\item\em Iterate to the next state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+H\-R\-I\-R Ai implementation. This module uses an evolution algorithm to increase the quality of image resoultion 
+
+Definition in file \hyperlink{a00004_source}{hrir\-\_\-ai.\-h}.
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{a00004_a9f1b69c513955afd2b4598424e9fe0d5}{\index{hrir\-\_\-ai.\-h@{hrir\-\_\-ai.\-h}!hrir\-\_\-ai\-\_\-create\-\_\-init\-\_\-state@{hrir\-\_\-ai\-\_\-create\-\_\-init\-\_\-state}}
+\index{hrir\-\_\-ai\-\_\-create\-\_\-init\-\_\-state@{hrir\-\_\-ai\-\_\-create\-\_\-init\-\_\-state}!hrir_ai.h@{hrir\-\_\-ai.\-h}}
+\paragraph[{hrir\-\_\-ai\-\_\-create\-\_\-init\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E hrir\-\_\-ai\-\_\-create\-\_\-init\-\_\-state (
+\begin{DoxyParamCaption}
+\item[{const image\-\_\-filter\-\_\-\-I\-M\-G $\ast$}]{original\-\_\-image, }
+\item[{unsigned}]{keep\-\_\-counter, }
+\item[{unsigned}]{iteration\-\_\-per\-\_\-level, }
+\item[{unsigned}]{redundancy}
+\end{DoxyParamCaption}
+)}}\label{a00004_a9f1b69c513955afd2b4598424e9fe0d5}
+
+
+Create the initial state of the evolution alg. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em original\-\_\-image} & The error \\
+\hline
+{\em keep\-\_\-counter} & Number of entity to keep during two iteration . \\
+\hline
+{\em iteration\-\_\-per\-\_\-level,\-:} & Number of iterations per one level. \\
+\hline
+{\em redundancy} & Redundancy of base parameters in the initial population. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+First state of the algorithm 
+\end{DoxyReturn}
+\hypertarget{a00004_a58cf4d2cd73bd42bcfe5798aaa6c9956}{\index{hrir\-\_\-ai.\-h@{hrir\-\_\-ai.\-h}!hrir\-\_\-ai\-\_\-iterate@{hrir\-\_\-ai\-\_\-iterate}}
+\index{hrir\-\_\-ai\-\_\-iterate@{hrir\-\_\-ai\-\_\-iterate}!hrir_ai.h@{hrir\-\_\-ai.\-h}}
+\paragraph[{hrir\-\_\-ai\-\_\-iterate}]{\setlength{\rightskip}{0pt plus 5cm}ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E hrir\-\_\-ai\-\_\-iterate (
+\begin{DoxyParamCaption}
+\item[{const ai\-\_\-evol\-\_\-\-S\-T\-A\-T\-E $\ast$}]{phase}
+\end{DoxyParamCaption}
+)}}\label{a00004_a58cf4d2cd73bd42bcfe5798aaa6c9956}
+
+
+Iterate to the next state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em phase} & start phase \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{a00008__todo000001}{Todo}]implement it \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+the next state. 
+\end{DoxyReturn}

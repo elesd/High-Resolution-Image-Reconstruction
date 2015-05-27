@@ -1,0 +1,53 @@
+\hypertarget{a00014}{\subsection{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/median\-\_\-filter.h File Reference}
+\label{a00014}\index{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/median\-\_\-filter.\-h@{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/median\-\_\-filter.\-h}}
+}
+{\ttfamily \#include $<$image\-\_\-filter.\-h$>$}\\*
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00014_ace98891b151f770abd5067a5a7b2e0da}{\#define \hyperlink{a00014_ace98891b151f770abd5067a5a7b2e0da}{M\-E\-D\-I\-A\-N\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-M\-A\-X\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-S\-I\-Z\-E}~20}\label{a00014_ace98891b151f770abd5067a5a7b2e0da}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{a00014_ab42b1bfcdb2322e7c78deb898822bc57}{median\-\_\-filter\-\_\-apply\-\_\-filter} (const \hyperlink{a00012_afbdd6cd26209a0a7c753b951a39160e3}{image\-\_\-filter\-\_\-\-I\-M\-G\-\_\-\-D\-A\-T\-A} img\-\_\-data, const double x, const double y, const unsigned size)
+\begin{DoxyCompactList}\small\item\em Apply the median filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Special filter not claclulated with simple mask. 
+
+Definition in file \hyperlink{a00014_source}{median\-\_\-filter.\-h}.
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{a00014_ab42b1bfcdb2322e7c78deb898822bc57}{\index{median\-\_\-filter.\-h@{median\-\_\-filter.\-h}!median\-\_\-filter\-\_\-apply\-\_\-filter@{median\-\_\-filter\-\_\-apply\-\_\-filter}}
+\index{median\-\_\-filter\-\_\-apply\-\_\-filter@{median\-\_\-filter\-\_\-apply\-\_\-filter}!median_filter.h@{median\-\_\-filter.\-h}}
+\paragraph[{median\-\_\-filter\-\_\-apply\-\_\-filter}]{\setlength{\rightskip}{0pt plus 5cm}double median\-\_\-filter\-\_\-apply\-\_\-filter (
+\begin{DoxyParamCaption}
+\item[{const {\bf image\-\_\-filter\-\_\-\-I\-M\-G\-\_\-\-D\-A\-T\-A}}]{img\-\_\-data, }
+\item[{const double}]{x, }
+\item[{const double}]{y, }
+\item[{const unsigned}]{size}
+\end{DoxyParamCaption}
+)}}\label{a00014_ab42b1bfcdb2322e7c78deb898822bc57}
+
+
+Apply the median filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img\-\_\-data} & the current data in the window \\
+\hline
+{\em x} & the x coordinate of the window \\
+\hline
+{\em y} & the y coordinate of the window \\
+\hline
+{\em size} & the size of the window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the filter 
+\end{DoxyReturn}

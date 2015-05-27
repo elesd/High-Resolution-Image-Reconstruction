@@ -1,0 +1,2 @@
+#define HRIR_VERSION_MAJOR 
+#define HRIR_VERSION_MINOR 

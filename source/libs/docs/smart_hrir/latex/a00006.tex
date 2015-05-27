@@ -1,0 +1,57 @@
+\hypertarget{a00006}{\subsection{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/smart\-\_\-hrir/smart\-\_\-hrir.h File Reference}
+\label{a00006}\index{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/smart\-\_\-hrir/smart\-\_\-hrir.\-h@{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/smart\-\_\-hrir/smart\-\_\-hrir.\-h}}
+}
+
+
+Smart high-\/resolution-\/image-\/reconstruction. Implementation of an evolution algorithm which is based on the hrir parameters.  
+
+
+{\ttfamily \#include $<$hrir/image\-\_\-filter.\-h$>$}\\*
+\subsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{a00002}{smart\-\_\-hrir\-\_\-\-S\-E\-T\-T\-I\-N\-G\-S}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+image\-\_\-filter\-\_\-\-I\-M\-G \hyperlink{a00006_a65e756585dabd3f6479eab5e6d0b8731}{smart\-\_\-hrir\-\_\-start\-\_\-algorithm} (const image\-\_\-filter\-\_\-\-I\-M\-G $\ast$input, \hyperlink{a00002}{smart\-\_\-hrir\-\_\-\-S\-E\-T\-T\-I\-N\-G\-S} $\ast$settings, unsigned $\ast$reached\-\_\-iteration, int $\ast$reached\-\_\-rank)
+\begin{DoxyCompactList}\small\item\em Start the algorithm to determine the best parameters. Determines and also use the best parameter settings, and returns the reconstructed image. There is a possibility to set up the parameter of mutation function. See \hyperlink{a00005_ac26fc6e9ac49a6a0a69537b0b0d0ae82}{hrir\-\_\-mutations\-\_\-set\-\_\-parameters}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Smart high-\/resolution-\/image-\/reconstruction. Implementation of an evolution algorithm which is based on the hrir parameters. 
+
+Definition in file \hyperlink{a00006_source}{smart\-\_\-hrir.\-h}.
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{a00006_a65e756585dabd3f6479eab5e6d0b8731}{\index{smart\-\_\-hrir.\-h@{smart\-\_\-hrir.\-h}!smart\-\_\-hrir\-\_\-start\-\_\-algorithm@{smart\-\_\-hrir\-\_\-start\-\_\-algorithm}}
+\index{smart\-\_\-hrir\-\_\-start\-\_\-algorithm@{smart\-\_\-hrir\-\_\-start\-\_\-algorithm}!smart_hrir.h@{smart\-\_\-hrir.\-h}}
+\paragraph[{smart\-\_\-hrir\-\_\-start\-\_\-algorithm}]{\setlength{\rightskip}{0pt plus 5cm}image\-\_\-filter\-\_\-\-I\-M\-G smart\-\_\-hrir\-\_\-start\-\_\-algorithm (
+\begin{DoxyParamCaption}
+\item[{const image\-\_\-filter\-\_\-\-I\-M\-G $\ast$}]{input, }
+\item[{{\bf smart\-\_\-hrir\-\_\-\-S\-E\-T\-T\-I\-N\-G\-S} $\ast$}]{settings, }
+\item[{unsigned $\ast$}]{reached\-\_\-iteration, }
+\item[{int $\ast$}]{reached\-\_\-rank}
+\end{DoxyParamCaption}
+)}}\label{a00006_a65e756585dabd3f6479eab5e6d0b8731}
+
+
+Start the algorithm to determine the best parameters. Determines and also use the best parameter settings, and returns the reconstructed image. There is a possibility to set up the parameter of mutation function. See \hyperlink{a00005_ac26fc6e9ac49a6a0a69537b0b0d0ae82}{hrir\-\_\-mutations\-\_\-set\-\_\-parameters}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input image \\
+\hline
+{\em settings} & setting of the algorithm. \\
+\hline
+{\em reached\-\_\-iteration} & The number of iteration which was reached. Optional parameter. \\
+\hline
+{\em reached\-\_\-rank} & The rank which was reached. Optional parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+image with double size. 
+\end{DoxyReturn}

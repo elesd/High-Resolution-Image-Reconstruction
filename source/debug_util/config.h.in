@@ -1,0 +1,13 @@
+#define debug_util_VERSION_MAJOR @debug_util_VERSION_MAJOR@
+#define debug_util_VERSION_MINOR @debug_util_VERSION_MINOR@
+
+/**
+* @mainpage Debug Util For C
+* @section intro Introduction
+* This small project contains a primitive debug utilities for C
+* projects.
+* Via macros one can create traces. It has different levels, like
+* TRACE, DEBUG, WARNING, ERROR.
+* If DEBUG_UTIL_ACTIVATE is not defined then this library has no
+* effect.
+*/

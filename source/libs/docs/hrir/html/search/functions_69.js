@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['image_5famplifier_5favg_5fscale',['image_amplifier_avg_scale',['../a00011.html#a91adba19c8150ae3cf915e44b814a1e0',1,'image_amplifier.h']]],
+  ['image_5famplifier_5fcut_5fscale',['image_amplifier_cut_scale',['../a00011.html#a8fa267e3b217e8fdb4d4b952188f5d7c',1,'image_amplifier.h']]],
+  ['image_5famplifier_5fdetails_5fup',['image_amplifier_details_up',['../a00011.html#ae99654f2d59a77ebcc06fbc4fcb46bf7',1,'image_amplifier.h']]],
+  ['image_5famplifier_5fscale',['image_amplifier_scale',['../a00011.html#a8cf8d5fc4dc72339a2ca0b21d8b6c69e',1,'image_amplifier.h']]],
+  ['image_5famplifier_5fscale_5fto_5forigin',['image_amplifier_scale_to_origin',['../a00011.html#a7ef6a75724d9ffa2c5aec848895a0be7',1,'image_amplifier.h']]],
+  ['image_5ffilter_5fapply_5ffilter',['image_filter_apply_filter',['../a00012.html#a67aae70446c59e40f48107bbf7a86202',1,'image_filter.h']]],
+  ['image_5ffilter_5fcopy',['image_filter_copy',['../a00012.html#a69c4a25547866f04fdf558a03b8ffcdf',1,'image_filter.h']]],
+  ['image_5ffilter_5fcopy_5fto',['image_filter_copy_to',['../a00012.html#a52b47e76b74ddefe45ecfd3efbc54a8b',1,'image_filter.h']]],
+  ['image_5ffilter_5fcreate_5ffilter_5fby_5ffunction',['image_filter_create_filter_by_function',['../a00012.html#aa7b441e45e2b04ed993b8e75a69dfb50',1,'image_filter.h']]],
+  ['image_5ffilter_5fcreate_5ffilter_5fby_5fmask',['image_filter_create_filter_by_mask',['../a00012.html#aca91506fce47f276e33c01ee1a619825',1,'image_filter.h']]],
+  ['image_5ffilter_5fcreate_5ffilter_5ffunction',['image_filter_create_filter_function',['../a00012.html#a83e83866ae0fd0cee569b15800fc779e',1,'image_filter.h']]],
+  ['image_5ffilter_5fcreate_5fimage',['image_filter_create_image',['../a00012.html#a80e8ffd950b89c44cc362bea62e76d91',1,'image_filter.h']]],
+  ['image_5ffilter_5fdestroy_5ffilter',['image_filter_destroy_filter',['../a00012.html#a2e8e2ff324fd37f6f71d35ef6c2f0d26',1,'image_filter.h']]],
+  ['image_5ffilter_5fdestroy_5fimage',['image_filter_destroy_image',['../a00012.html#aba9dc1def7d34f75e0f9dbd7029eeb9a',1,'image_filter.h']]],
+  ['image_5freconstruct_5fcalculate_5fmse',['image_reconstruct_calculate_mse',['../a00013.html#a82d8843b3a27e1edc2bf9ecfa9460341',1,'image_reconstruct.h']]],
+  ['image_5freconstruct_5ffrom_5flower_5fimage',['image_reconstruct_from_lower_image',['../a00013.html#a12bf63d8952ea0200b447f80e1f0eecd',1,'image_reconstruct.h']]],
+  ['image_5freconstruct_5ftrace_5fparameter',['image_reconstruct_trace_parameter',['../a00013.html#afb80bc758491d33d1398244a6b572d0e',1,'image_reconstruct.h']]]
+];

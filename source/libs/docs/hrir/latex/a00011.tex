@@ -1,0 +1,203 @@
+\hypertarget{a00011}{\subsection{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/image\-\_\-amplifier.h File Reference}
+\label{a00011}\index{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/image\-\_\-amplifier.\-h@{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/image\-\_\-amplifier.\-h}}
+}
+{\ttfamily \#include \char`\"{}image\-\_\-filter.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}non\-\_\-maxima.\-h\char`\"{}}\\*
+\subsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{a00002}{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S}
+\begin{DoxyCompactList}\small\item\em Structure to hold the parameter to the main functionality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00011_ad4757f615c82fc0c11ca12509addda11}{\#define \hyperlink{a00011_ad4757f615c82fc0c11ca12509addda11}{I\-M\-A\-G\-E\-\_\-\-A\-M\-P\-L\-I\-F\-I\-E\-R\-\_\-\-O\-K}~0}\label{a00011_ad4757f615c82fc0c11ca12509addda11}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+\hypertarget{a00011_ae436e4b7fc21db27f5839e1ff2f11ad0}{\#define \hyperlink{a00011_ae436e4b7fc21db27f5839e1ff2f11ad0}{I\-M\-A\-G\-E\-\_\-\-A\-M\-P\-L\-I\-F\-I\-E\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-E\-R\-R\-O\-R}~-\/10}\label{a00011_ae436e4b7fc21db27f5839e1ff2f11ad0}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+\hypertarget{a00011_afe85512071c88f9b99781422844e8fb4}{\#define \hyperlink{a00011_afe85512071c88f9b99781422844e8fb4}{I\-M\-A\-G\-E\-\_\-\-A\-M\-P\-L\-I\-F\-I\-E\-R\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A\-\_\-\-E\-R\-R\-O\-R}~-\/15}\label{a00011_afe85512071c88f9b99781422844e8fb4}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+\hypertarget{a00011_a6923f44a0c9d6c9677800a23c957bfa8}{\#define \hyperlink{a00011_a6923f44a0c9d6c9677800a23c957bfa8}{I\-M\-A\-G\-E\-\_\-\-A\-M\-P\-L\-I\-F\-I\-E\-R\-\_\-\-M\-E\-M\-\_\-\-E\-R\-R\-O\-R}~-\/20}\label{a00011_a6923f44a0c9d6c9677800a23c957bfa8}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00011_a0d1363de9476dc6ae5b800ea4fade103}{typedef int \hyperlink{a00011_a0d1363de9476dc6ae5b800ea4fade103}{image\-\_\-amplifier\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-O\-D\-E}}\label{a00011_a0d1363de9476dc6ae5b800ea4fade103}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{a00011_a1ea386c90cd9638e2f2576d348eb122f}{image\-\_\-amplifier\-\_\-\-S\-C\-A\-L\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N} )(const \hyperlink{a00012_a3d41ec3c203c47ad7dec21ff55acc883}{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-G\-R\-I\-D} input, const \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$original, \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$out)
+\begin{DoxyCompactList}\small\item\em scale function pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{a00011_ab9ab1f07cda00e3ff3333457d61d7cca}{image\-\_\-amplifier\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-T\-Y\-P\-E} \{ {\bfseries I\-M\-A\-G\-E\-\_\-\-A\-M\-P\-L\-I\-F\-I\-E\-R\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N}, 
+{\bfseries I\-M\-A\-G\-E\-\_\-\-A\-M\-P\-L\-I\-F\-I\-E\-R\-\_\-\-M\-E\-D\-I\-A\-N}
+ \}
+\begin{DoxyCompactList}\small\item\em The enumeration of the known filters. \end{DoxyCompactList}\item 
+enum \hyperlink{a00011_a6409b55393af13a405538b966d80ec1d}{image\-\_\-amplifier\-\_\-\-P\-R\-O\-C\-E\-S\-S\-\_\-\-T\-Y\-P\-E} \{ {\bfseries I\-M\-A\-G\-E\-\_\-\-A\-M\-P\-L\-I\-F\-I\-E\-R\-\_\-\-A\-P\-P\-L\-Y\-\_\-\-F\-I\-L\-T\-E\-R}, 
+{\bfseries I\-M\-A\-G\-E\-\_\-\-A\-M\-P\-L\-I\-F\-I\-E\-R\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A}
+ \}
+\begin{DoxyCompactList}\small\item\em The list of known preprocessor types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00011_a0d1363de9476dc6ae5b800ea4fade103}{image\-\_\-amplifier\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-O\-D\-E} \hyperlink{a00011_ae99654f2d59a77ebcc06fbc4fcb46bf7}{image\-\_\-amplifier\-\_\-details\-\_\-up} (const \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$input, const \hyperlink{a00002}{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S} $\ast$options, \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$output)
+\begin{DoxyCompactList}\small\item\em improves the intensity of details \end{DoxyCompactList}\item 
+void \hyperlink{a00011_a8cf8d5fc4dc72339a2ca0b21d8b6c69e}{image\-\_\-amplifier\-\_\-scale} (const \hyperlink{a00012_a3d41ec3c203c47ad7dec21ff55acc883}{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-G\-R\-I\-D} input, const \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$original, \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$out)
+\begin{DoxyCompactList}\small\item\em Simple scale function. \end{DoxyCompactList}\item 
+void \hyperlink{a00011_a7ef6a75724d9ffa2c5aec848895a0be7}{image\-\_\-amplifier\-\_\-scale\-\_\-to\-\_\-origin} (const \hyperlink{a00012_a3d41ec3c203c47ad7dec21ff55acc883}{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-G\-R\-I\-D} input, const \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$original, \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$out)
+\begin{DoxyCompactList}\small\item\em Simple scale function. \end{DoxyCompactList}\item 
+void \hyperlink{a00011_a91adba19c8150ae3cf915e44b814a1e0}{image\-\_\-amplifier\-\_\-avg\-\_\-scale} (const \hyperlink{a00012_a3d41ec3c203c47ad7dec21ff55acc883}{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-G\-R\-I\-D} input, const \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$original, \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$out)
+\begin{DoxyCompactList}\small\item\em Simple scale function. \end{DoxyCompactList}\item 
+void \hyperlink{a00011_a8fa267e3b217e8fdb4d4b952188f5d7c}{image\-\_\-amplifier\-\_\-cut\-\_\-scale} (const \hyperlink{a00012_a3d41ec3c203c47ad7dec21ff55acc883}{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-G\-R\-I\-D} input, const \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$original, \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$out)
+\begin{DoxyCompactList}\small\item\em Simple scale function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Functionalities for image modifications 
+
+Definition in file \hyperlink{a00011_source}{image\-\_\-amplifier.\-h}.
+
+
+
+\subsubsection{Typedef Documentation}
+\hypertarget{a00011_a1ea386c90cd9638e2f2576d348eb122f}{\index{image\-\_\-amplifier.\-h@{image\-\_\-amplifier.\-h}!image\-\_\-amplifier\-\_\-\-S\-C\-A\-L\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N@{image\-\_\-amplifier\-\_\-\-S\-C\-A\-L\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}}
+\index{image\-\_\-amplifier\-\_\-\-S\-C\-A\-L\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N@{image\-\_\-amplifier\-\_\-\-S\-C\-A\-L\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}!image_amplifier.h@{image\-\_\-amplifier.\-h}}
+\paragraph[{image\-\_\-amplifier\-\_\-\-S\-C\-A\-L\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ image\-\_\-amplifier\-\_\-\-S\-C\-A\-L\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N)(const {\bf image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-G\-R\-I\-D} input, const {\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$original, {\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$out)}}\label{a00011_a1ea386c90cd9638e2f2576d348eb122f}
+
+
+scale function pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & input grid. \\
+\hline
+{\em original} & pointer to the original image \\
+\hline
+{\em out} & The scaled image \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file image\-\_\-amplifier.\-h.
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{a00011_a91adba19c8150ae3cf915e44b814a1e0}{\index{image\-\_\-amplifier.\-h@{image\-\_\-amplifier.\-h}!image\-\_\-amplifier\-\_\-avg\-\_\-scale@{image\-\_\-amplifier\-\_\-avg\-\_\-scale}}
+\index{image\-\_\-amplifier\-\_\-avg\-\_\-scale@{image\-\_\-amplifier\-\_\-avg\-\_\-scale}!image_amplifier.h@{image\-\_\-amplifier.\-h}}
+\paragraph[{image\-\_\-amplifier\-\_\-avg\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}void image\-\_\-amplifier\-\_\-avg\-\_\-scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-G\-R\-I\-D}}]{input, }
+\item[{const {\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{original, }
+\item[{{\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{out}
+\end{DoxyParamCaption}
+)}}\label{a00011_a91adba19c8150ae3cf915e44b814a1e0}
+
+
+Simple scale function. 
+
+This scale function gets the avarige of the orignal and the result image. After this it cuts the foo low or too high items. 
+\begin{DoxyParams}{Parameters}
+{\em input} & the input image \\
+\hline
+{\em original} & the original image \\
+\hline
+{\em out} & the scaled result \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00011_a8fa267e3b217e8fdb4d4b952188f5d7c}{\index{image\-\_\-amplifier.\-h@{image\-\_\-amplifier.\-h}!image\-\_\-amplifier\-\_\-cut\-\_\-scale@{image\-\_\-amplifier\-\_\-cut\-\_\-scale}}
+\index{image\-\_\-amplifier\-\_\-cut\-\_\-scale@{image\-\_\-amplifier\-\_\-cut\-\_\-scale}!image_amplifier.h@{image\-\_\-amplifier.\-h}}
+\paragraph[{image\-\_\-amplifier\-\_\-cut\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}void image\-\_\-amplifier\-\_\-cut\-\_\-scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-G\-R\-I\-D}}]{input, }
+\item[{const {\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{original, }
+\item[{{\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{out}
+\end{DoxyParamCaption}
+)}}\label{a00011_a8fa267e3b217e8fdb4d4b952188f5d7c}
+
+
+Simple scale function. 
+
+This scale function cuts the lower or upper flow pixels. 
+\begin{DoxyParams}{Parameters}
+{\em input} & the input image \\
+\hline
+{\em original} & the original image \\
+\hline
+{\em out} & the scaled result \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00011_ae99654f2d59a77ebcc06fbc4fcb46bf7}{\index{image\-\_\-amplifier.\-h@{image\-\_\-amplifier.\-h}!image\-\_\-amplifier\-\_\-details\-\_\-up@{image\-\_\-amplifier\-\_\-details\-\_\-up}}
+\index{image\-\_\-amplifier\-\_\-details\-\_\-up@{image\-\_\-amplifier\-\_\-details\-\_\-up}!image_amplifier.h@{image\-\_\-amplifier.\-h}}
+\paragraph[{image\-\_\-amplifier\-\_\-details\-\_\-up}]{\setlength{\rightskip}{0pt plus 5cm}{\bf image\-\_\-amplifier\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-O\-D\-E} image\-\_\-amplifier\-\_\-details\-\_\-up (
+\begin{DoxyParamCaption}
+\item[{const {\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{input, }
+\item[{const {\bf image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S} $\ast$}]{options, }
+\item[{{\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{output}
+\end{DoxyParamCaption}
+)}}\label{a00011_ae99654f2d59a77ebcc06fbc4fcb46bf7}
+
+
+improves the intensity of details 
+
+This function uses a Gaussian filter, which dismiss the details. After create the difference of the two image, this new image contains only the details. Thereafter summirize the original and the difference image, and the result is an image where the intensity of the details is bigger. 
+\begin{DoxyParams}{Parameters}
+{\em input} & original image \\
+\hline
+{\em options} & This parameter contains the open variables in the algorithm. \\
+\hline
+{\em output} & already created image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The error code 
+\end{DoxyReturn}
+\hypertarget{a00011_a8cf8d5fc4dc72339a2ca0b21d8b6c69e}{\index{image\-\_\-amplifier.\-h@{image\-\_\-amplifier.\-h}!image\-\_\-amplifier\-\_\-scale@{image\-\_\-amplifier\-\_\-scale}}
+\index{image\-\_\-amplifier\-\_\-scale@{image\-\_\-amplifier\-\_\-scale}!image_amplifier.h@{image\-\_\-amplifier.\-h}}
+\paragraph[{image\-\_\-amplifier\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}void image\-\_\-amplifier\-\_\-scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-G\-R\-I\-D}}]{input, }
+\item[{const {\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{original, }
+\item[{{\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{out}
+\end{DoxyParamCaption}
+)}}\label{a00011_a8cf8d5fc4dc72339a2ca0b21d8b6c69e}
+
+
+Simple scale function. 
+
+This scale function scale the image to the whole boundary \mbox{[}0,255\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em input} & the input image \\
+\hline
+{\em original} & the original image \\
+\hline
+{\em out} & the scaled result \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00011_a7ef6a75724d9ffa2c5aec848895a0be7}{\index{image\-\_\-amplifier.\-h@{image\-\_\-amplifier.\-h}!image\-\_\-amplifier\-\_\-scale\-\_\-to\-\_\-origin@{image\-\_\-amplifier\-\_\-scale\-\_\-to\-\_\-origin}}
+\index{image\-\_\-amplifier\-\_\-scale\-\_\-to\-\_\-origin@{image\-\_\-amplifier\-\_\-scale\-\_\-to\-\_\-origin}!image_amplifier.h@{image\-\_\-amplifier.\-h}}
+\paragraph[{image\-\_\-amplifier\-\_\-scale\-\_\-to\-\_\-origin}]{\setlength{\rightskip}{0pt plus 5cm}void image\-\_\-amplifier\-\_\-scale\-\_\-to\-\_\-origin (
+\begin{DoxyParamCaption}
+\item[{const {\bf image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-G\-R\-I\-D}}]{input, }
+\item[{const {\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{original, }
+\item[{{\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{out}
+\end{DoxyParamCaption}
+)}}\label{a00011_a7ef6a75724d9ffa2c5aec848895a0be7}
+
+
+Simple scale function. 
+
+This scale function keeps the original minimum and maximum values, and scale the new image. 
+\begin{DoxyParams}{Parameters}
+{\em input} & the input image \\
+\hline
+{\em original} & the original image \\
+\hline
+{\em out} & the scaled result \\
+\hline
+\end{DoxyParams}

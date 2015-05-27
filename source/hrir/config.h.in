@@ -1,0 +1,18 @@
+#define HRIR_VERSION_MAJOR @HRIR_VERSION_MAJOR@
+#define HRIR_VERSION_MINOR @HRIR_VERSION_MINOR@
+
+/**
+* @mainpage High Resolution Image Reconstruction
+* @section intro Introduction
+* With Haar Transformation this project implements a high
+* resolution image reconstructino framework.
+* @section more_details More Details.
+* Usually the input of the reconstruction is a small image, the
+* result is a twice more bigger image. It only works for black and
+* weith images, and the quality of a simple transformation not so high.
+* To improve this there are different kind of pre-process possibilities,
+* with different kind of filters and edge detection. It is because the
+* haar transformation is based on edges, so to improve the quality of
+* edges can improve the reconstruction quality. Unfortunately it is
+* hard to determine which parameter settings are the best.
+*/

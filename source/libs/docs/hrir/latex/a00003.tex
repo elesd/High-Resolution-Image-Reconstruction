@@ -1,0 +1,75 @@
+\hypertarget{a00003}{\subsection{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R Struct Reference}
+\label{a00003}\index{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R@{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R}}
+}
+
+
+Filter object.  
+
+
+
+
+{\ttfamily \#include $<$image\-\_\-filter.\-h$>$}
+
+\subsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{a00003_a3cb3a68755dc1662ae6f82d9d8c0a815}{size}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{a00012_a8249e3d997dddbfdce6ef81c25b1f3b3}{image\_filter\_MASK\_GRID} \hyperlink{a00003_acadf8f8421df9be6705f8328b860a87a}{mask}\\
+\>\hyperlink{a00012_acaed2c22ba7a7ae3c91fd6a6acb5b19a}{image\_filter\_FILTER\_FUNCTION} \hyperlink{a00003_af9176629481fe4c3923f0b7111c586ee}{function}\\
+\} \hyperlink{a00003_a100928ec8ffed698af4efbd084710b1d}{filter}\\
+
+\end{tabbing}\item 
+\hyperlink{a00012_abecdf477ce7aa2bb6f4b6b0f218a9eea}{image\-\_\-filter\-\_\-\-M\-O\-D\-E} \hyperlink{a00003_a7b2c5d0f2fefbdf01798414000fc4387}{mode}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Filter object. 
+
+It could be work based on a mask or based on a mathematical function. 
+
+Definition at line 87 of file image\-\_\-filter.\-h.
+
+
+
+\subsubsection{Field Documentation}
+\hypertarget{a00003_a100928ec8ffed698af4efbd084710b1d}{\index{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R@{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R}!filter@{filter}}
+\index{filter@{filter}!image_filter_FILTER@{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R}}
+\paragraph[{filter}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \}   image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-::filter}}\label{a00003_a100928ec8ffed698af4efbd084710b1d}
+Used filter \hypertarget{a00003_af9176629481fe4c3923f0b7111c586ee}{\index{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R@{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R}!function@{function}}
+\index{function@{function}!image_filter_FILTER@{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R}}
+\paragraph[{function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N} image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-::function}}\label{a00003_af9176629481fe4c3923f0b7111c586ee}
+Filter which given as a function 
+
+Definition at line 97 of file image\-\_\-filter.\-h.
+
+\hypertarget{a00003_acadf8f8421df9be6705f8328b860a87a}{\index{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R@{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R}!mask@{mask}}
+\index{mask@{mask}!image_filter_FILTER@{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R}}
+\paragraph[{mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf image\-\_\-filter\-\_\-\-M\-A\-S\-K\-\_\-\-G\-R\-I\-D} image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-::mask}}\label{a00003_acadf8f8421df9be6705f8328b860a87a}
+Filter which given as a mask 
+
+Definition at line 95 of file image\-\_\-filter.\-h.
+
+\hypertarget{a00003_a7b2c5d0f2fefbdf01798414000fc4387}{\index{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R@{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R}!mode@{mode}}
+\index{mode@{mode}!image_filter_FILTER@{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R}}
+\paragraph[{mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf image\-\_\-filter\-\_\-\-M\-O\-D\-E} image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-::mode}}\label{a00003_a7b2c5d0f2fefbdf01798414000fc4387}
+The filter mode 
+
+Definition at line 100 of file image\-\_\-filter.\-h.
+
+\hypertarget{a00003_a3cb3a68755dc1662ae6f82d9d8c0a815}{\index{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R@{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R}!size@{size}}
+\index{size@{size}!image_filter_FILTER@{image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R}}
+\paragraph[{size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned image\-\_\-filter\-\_\-\-F\-I\-L\-T\-E\-R\-::size}}\label{a00003_a3cb3a68755dc1662ae6f82d9d8c0a815}
+Size of the filter 
+
+Definition at line 90 of file image\-\_\-filter.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/\hyperlink{a00012}{image\-\_\-filter.\-h}\end{DoxyCompactItemize}

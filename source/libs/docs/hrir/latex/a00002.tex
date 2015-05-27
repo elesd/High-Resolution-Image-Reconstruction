@@ -1,0 +1,82 @@
+\hypertarget{a00002}{\subsection{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S Struct Reference}
+\label{a00002}\index{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S@{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S}}
+}
+
+
+Structure to hold the parameter to the main functionality.  
+
+
+
+
+{\ttfamily \#include $<$image\-\_\-amplifier.\-h$>$}
+
+\subsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>double {\bfseries sigma}\\
+\>\} \hyperlink{a00002_a11c159f011f710080ba5edd5b56430e7}{gaussian}\\
+\>\>\>{\em the gaussian params }\\
+\>struct \{\\
+\>\>\hyperlink{a00015_a7dd815a0a3b2d6f876ff33571eb2e12d}{non\_maxima\_GRADIENT\_MASK} {\bfseries mask}\\
+\>\} {\bfseries non\_maxima}\\
+\} \hyperlink{a00002_ac7c75806a264a52c487659515f68ff31}{params}\\
+
+\end{tabbing}\item 
+\hyperlink{a00011_ab9ab1f07cda00e3ff3333457d61d7cca}{image\-\_\-amplifier\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-T\-Y\-P\-E} \hyperlink{a00002_a4bc5ec751e2e2013dafc3a6b65e24323}{type}
+\item 
+\hyperlink{a00011_a6409b55393af13a405538b966d80ec1d}{image\-\_\-amplifier\-\_\-\-P\-R\-O\-C\-E\-S\-S\-\_\-\-T\-Y\-P\-E} \hyperlink{a00002_aa6925bbe38cfca63e79e7d2ea8847396}{method}
+\item 
+unsigned \hyperlink{a00002_aa81fa5511538092f08167cbd38091c2f}{filter\-\_\-size}
+\item 
+\hyperlink{a00011_a1ea386c90cd9638e2f2576d348eb122f}{image\-\_\-amplifier\-\_\-\-S\-C\-A\-L\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N} \hyperlink{a00002_a9b180d0032ef65ead5962c570736e423}{scale}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Structure to hold the parameter to the main functionality. 
+
+Definition at line 56 of file image\-\_\-amplifier.\-h.
+
+
+
+\subsubsection{Field Documentation}
+\hypertarget{a00002_aa81fa5511538092f08167cbd38091c2f}{\index{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S@{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S}!filter\-\_\-size@{filter\-\_\-size}}
+\index{filter\-\_\-size@{filter\-\_\-size}!image_amplifier_OPTIONS@{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S}}
+\paragraph[{filter\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S\-::filter\-\_\-size}}\label{a00002_aa81fa5511538092f08167cbd38091c2f}
+Size\-Of the filter 
+
+Definition at line 90 of file image\-\_\-amplifier.\-h.
+
+\hypertarget{a00002_aa6925bbe38cfca63e79e7d2ea8847396}{\index{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S@{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S}!method@{method}}
+\index{method@{method}!image_amplifier_OPTIONS@{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S}}
+\paragraph[{method}]{\setlength{\rightskip}{0pt plus 5cm}{\bf image\-\_\-amplifier\-\_\-\-P\-R\-O\-C\-E\-S\-S\-\_\-\-T\-Y\-P\-E} image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S\-::method}}\label{a00002_aa6925bbe38cfca63e79e7d2ea8847396}
+Type of the preprocessing 
+
+Definition at line 85 of file image\-\_\-amplifier.\-h.
+
+\hypertarget{a00002_ac7c75806a264a52c487659515f68ff31}{\index{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S@{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S}!params@{params}}
+\index{params@{params}!image_amplifier_OPTIONS@{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S}}
+\paragraph[{params}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \}   image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S\-::params}}\label{a00002_ac7c75806a264a52c487659515f68ff31}
+Filter parameter \hypertarget{a00002_a9b180d0032ef65ead5962c570736e423}{\index{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S@{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S}!scale@{scale}}
+\index{scale@{scale}!image_amplifier_OPTIONS@{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S}}
+\paragraph[{scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf image\-\_\-amplifier\-\_\-\-S\-C\-A\-L\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N} image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S\-::scale}}\label{a00002_a9b180d0032ef65ead5962c570736e423}
+Filtered image's scaling function. 
+
+Definition at line 95 of file image\-\_\-amplifier.\-h.
+
+\hypertarget{a00002_a4bc5ec751e2e2013dafc3a6b65e24323}{\index{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S@{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S}!type@{type}}
+\index{type@{type}!image_amplifier_OPTIONS@{image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S}}
+\paragraph[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf image\-\_\-amplifier\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-T\-Y\-P\-E} image\-\_\-amplifier\-\_\-\-O\-P\-T\-I\-O\-N\-S\-::type}}\label{a00002_a4bc5ec751e2e2013dafc3a6b65e24323}
+Type of the filter 
+
+Definition at line 80 of file image\-\_\-amplifier.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/\hyperlink{a00011}{image\-\_\-amplifier.\-h}\end{DoxyCompactItemize}

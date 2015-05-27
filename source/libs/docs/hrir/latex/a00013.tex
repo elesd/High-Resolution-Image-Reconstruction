@@ -1,0 +1,248 @@
+\hypertarget{a00013}{\subsection{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/image\-\_\-reconstruct.h File Reference}
+\label{a00013}\index{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/image\-\_\-reconstruct.\-h@{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/image\-\_\-reconstruct.\-h}}
+}
+{\ttfamily \#include \char`\"{}image\-\_\-filter.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$debug\-\_\-util/debug.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+\subsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{a00005}{image\-\_\-reconstruct\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-S}
+\begin{DoxyCompactList}\small\item\em Parameter for image preprocessing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00013_a5d3e11bd9c9b216b7b19bd842ef654ad}{\#define \hyperlink{a00013_a5d3e11bd9c9b216b7b19bd842ef654ad}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-O\-K}~0}\label{a00013_a5d3e11bd9c9b216b7b19bd842ef654ad}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+\hypertarget{a00013_a52a36b669da74ad6d52f3879879b37fd}{\#define \hyperlink{a00013_a52a36b669da74ad6d52f3879879b37fd}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-A\-P\-P\-R\-O\-X\-\_\-\-E\-R\-R\-O\-R}~-\/8}\label{a00013_a52a36b669da74ad6d52f3879879b37fd}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+\hypertarget{a00013_a9a3201c26690e3b1784471c3597ed111}{\#define \hyperlink{a00013_a9a3201c26690e3b1784471c3597ed111}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-I\-L\-T\-E\-R}~-\/9}\label{a00013_a9a3201c26690e3b1784471c3597ed111}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+\hypertarget{a00013_abb31cd9e335e681f67536b4b7424fa99}{\#define \hyperlink{a00013_abb31cd9e335e681f67536b4b7424fa99}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-C\-A\-L\-E}~-\/10}\label{a00013_abb31cd9e335e681f67536b4b7424fa99}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+\hypertarget{a00013_aed253771c228720c23e0ce46c777b561}{\#define \hyperlink{a00013_aed253771c228720c23e0ce46c777b561}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-P\-R\-E\-P\-A\-R\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R}~-\/10}\label{a00013_aed253771c228720c23e0ce46c777b561}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+\hypertarget{a00013_a1c03d3ba5b3e6e762312da626f27927b}{\#define \hyperlink{a00013_a1c03d3ba5b3e6e762312da626f27927b}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-M\-E\-M\-\_\-\-E\-R\-R\-O\-R}~-\/20}\label{a00013_a1c03d3ba5b3e6e762312da626f27927b}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\item 
+\hypertarget{a00013_abf3443d93974425a774dff64cbfbcdc6}{\#define \hyperlink{a00013_abf3443d93974425a774dff64cbfbcdc6}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-M\-A\-X\-\_\-\-P\-I\-X\-E\-L\-\_\-\-V\-A\-L\-U\-E}~255}\label{a00013_abf3443d93974425a774dff64cbfbcdc6}
+
+\begin{DoxyCompactList}\small\item\em Maximum possible value of a pixel. \end{DoxyCompactList}\item 
+\#define \hyperlink{a00013_acd563962a2519e1a0f6db482b702e0f1}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-D\-I\-F\-F\-\_\-\-F\-U\-N\-C}(x, y)~abs((x) -\/ (y))
+\begin{DoxyCompactList}\small\item\em Function to calculate distance between two point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00013_a503a55637040f4b6244d1a6bee6c9f01}{typedef int \hyperlink{a00013_a503a55637040f4b6244d1a6bee6c9f01}{image\-\_\-reconstruct\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-O\-D\-E}}\label{a00013_a503a55637040f4b6244d1a6bee6c9f01}
+
+\begin{DoxyCompactList}\small\item\em No doc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{a00013_a426aaaa85fc93215c39f26d2738b9d87}{image\-\_\-reconstruct\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-T\-Y\-P\-E} \{ \hyperlink{a00013_a426aaaa85fc93215c39f26d2738b9d87a6a8e1dbe0cc314b132f2e2706daede1e}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-O\-B\-E\-L}, 
+\hyperlink{a00013_a426aaaa85fc93215c39f26d2738b9d87aa75a25d707f494be996cc5e1f25161cc}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-P\-R\-E\-W\-I\-T}
+ \}
+\item 
+enum \hyperlink{a00013_ac27dbc8bff5d1fdaa463a1c1448e134b}{image\-\_\-reconstruct\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D} \{ \\*
+\hyperlink{a00013_ac27dbc8bff5d1fdaa463a1c1448e134ba5e1954dcfb78ec0f8f2e922e86201606}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-T\-O\-\_\-\-O\-R\-I\-G\-I\-N}, 
+\hyperlink{a00013_ac27dbc8bff5d1fdaa463a1c1448e134baa13c9e41d04d587b38ccd22a5537287d}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-U\-P}, 
+\hyperlink{a00013_ac27dbc8bff5d1fdaa463a1c1448e134baf2ecc0b3d9e21790477928798352fc22}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-C\-U\-T}, 
+\hyperlink{a00013_ac27dbc8bff5d1fdaa463a1c1448e134ba29162400adfc3650c6ab2e0631e99f66}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-A\-V\-G}, 
+\\*
+\hyperlink{a00013_ac27dbc8bff5d1fdaa463a1c1448e134ba74e9c7ac1cbad8c77f4fa1254dda8875}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-N\-U\-M\-\_\-\-O\-F\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D}
+ \}
+\item 
+enum \hyperlink{a00013_ac74b45c91f9169f8834162f730054133}{image\-\_\-reconstruct\-\_\-\-P\-R\-E\-P\-R\-O\-C\-E\-S\-S\-\_\-\-T\-Y\-P\-E} \{ \hyperlink{a00013_ac74b45c91f9169f8834162f730054133a317f8a8322a6c33d2484074f7fdcaf6c}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A}, 
+\hyperlink{a00013_ac74b45c91f9169f8834162f730054133ac78b834cacb432cfd12c90c5c75a046a}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-M\-E\-D\-I\-A\-N}, 
+\hyperlink{a00013_ac74b45c91f9169f8834162f730054133a86ec104c82721cc77e8da13251cc8aee}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N}
+ \}
+\begin{DoxyCompactList}\small\item\em the type of different preprocessor methods \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00013_a503a55637040f4b6244d1a6bee6c9f01}{image\-\_\-reconstruct\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-O\-D\-E} \hyperlink{a00013_a82d8843b3a27e1edc2bf9ecfa9460341}{image\-\_\-reconstruct\-\_\-calculate\-\_\-mse} (const \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$original, const \hyperlink{a00005}{image\-\_\-reconstruct\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-S} $\ast$params, \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$result, unsigned $\ast$mse, double $\ast$psnr)
+\begin{DoxyCompactList}\small\item\em Calculates the error during the reconstruction. \end{DoxyCompactList}\item 
+\hyperlink{a00013_a503a55637040f4b6244d1a6bee6c9f01}{image\-\_\-reconstruct\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-O\-D\-E} \hyperlink{a00013_a12bf63d8952ea0200b447f80e1f0eecd}{image\-\_\-reconstruct\-\_\-from\-\_\-lower\-\_\-image} (const \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$original, const \hyperlink{a00005}{image\-\_\-reconstruct\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-S} $\ast$params, \hyperlink{a00004}{image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Create a double sized image from the original. \end{DoxyCompactList}\item 
+void \hyperlink{a00013_afb80bc758491d33d1398244a6b572d0e}{image\-\_\-reconstruct\-\_\-trace\-\_\-parameter} (void $\ast$parameter, char buffer\mbox{[}D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Functions for image reconstruction. Reconstruction consist of 2 main steps reconstruction and reconstraction. 
+
+Definition in file \hyperlink{a00013_source}{image\-\_\-reconstruct.\-h}.
+
+
+
+\subsubsection{Macro Definition Documentation}
+\hypertarget{a00013_acd563962a2519e1a0f6db482b702e0f1}{\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-D\-I\-F\-F\-\_\-\-F\-U\-N\-C@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-D\-I\-F\-F\-\_\-\-F\-U\-N\-C}}
+\index{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-D\-I\-F\-F\-\_\-\-F\-U\-N\-C@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-D\-I\-F\-F\-\_\-\-F\-U\-N\-C}!image_reconstruct.h@{image\-\_\-reconstruct.\-h}}
+\paragraph[{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-D\-I\-F\-F\-\_\-\-F\-U\-N\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-D\-I\-F\-F\-\_\-\-F\-U\-N\-C(
+\begin{DoxyParamCaption}
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)~abs((x) -\/ (y))}}\label{a00013_acd563962a2519e1a0f6db482b702e0f1}
+
+
+Function to calculate distance between two point. 
+
+It is used for psnr and mse calculation. Due to performance reason it uses abs like first norm, but it could be modified to other functionality like squer. If you compile the library with I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-U\-S\-E\-\_\-\-R\-E\-A\-L\-\_\-\-S\-Q\-U\-E\-R compiler switch than it force to use this definition. \begin{DoxySeeAlso}{See Also}
+\hyperlink{a00013_a82d8843b3a27e1edc2bf9ecfa9460341}{image\-\_\-reconstruct\-\_\-calculate\-\_\-mse} 
+\end{DoxySeeAlso}
+
+
+Definition at line 43 of file image\-\_\-reconstruct.\-h.
+
+
+
+\subsubsection{Enumeration Type Documentation}
+\hypertarget{a00013_a426aaaa85fc93215c39f26d2738b9d87}{\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!image\-\_\-reconstruct\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-T\-Y\-P\-E@{image\-\_\-reconstruct\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-T\-Y\-P\-E}}
+\index{image\-\_\-reconstruct\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-T\-Y\-P\-E@{image\-\_\-reconstruct\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-T\-Y\-P\-E}!image_reconstruct.h@{image\-\_\-reconstruct.\-h}}
+\paragraph[{image\-\_\-reconstruct\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf image\-\_\-reconstruct\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-T\-Y\-P\-E}}}\label{a00013_a426aaaa85fc93215c39f26d2738b9d87}
+The enumeration of known edge detection during non maxima method. \begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-O\-B\-E\-L@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-O\-B\-E\-L}!image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}}\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-O\-B\-E\-L@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-O\-B\-E\-L}}\item[{\em 
+\hypertarget{a00013_a426aaaa85fc93215c39f26d2738b9d87a6a8e1dbe0cc314b132f2e2706daede1e}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-O\-B\-E\-L}\label{a00013_a426aaaa85fc93215c39f26d2738b9d87a6a8e1dbe0cc314b132f2e2706daede1e}
+}]Sobel mask \index{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-P\-R\-E\-W\-I\-T@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-P\-R\-E\-W\-I\-T}!image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}}\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-P\-R\-E\-W\-I\-T@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-P\-R\-E\-W\-I\-T}}\item[{\em 
+\hypertarget{a00013_a426aaaa85fc93215c39f26d2738b9d87aa75a25d707f494be996cc5e1f25161cc}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-P\-R\-E\-W\-I\-T}\label{a00013_a426aaaa85fc93215c39f26d2738b9d87aa75a25d707f494be996cc5e1f25161cc}
+}]Prewit mask \end{description}
+\end{Desc}
+
+
+
+Definition at line 55 of file image\-\_\-reconstruct.\-h.
+
+\hypertarget{a00013_ac74b45c91f9169f8834162f730054133}{\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!image\-\_\-reconstruct\-\_\-\-P\-R\-E\-P\-R\-O\-C\-E\-S\-S\-\_\-\-T\-Y\-P\-E@{image\-\_\-reconstruct\-\_\-\-P\-R\-E\-P\-R\-O\-C\-E\-S\-S\-\_\-\-T\-Y\-P\-E}}
+\index{image\-\_\-reconstruct\-\_\-\-P\-R\-E\-P\-R\-O\-C\-E\-S\-S\-\_\-\-T\-Y\-P\-E@{image\-\_\-reconstruct\-\_\-\-P\-R\-E\-P\-R\-O\-C\-E\-S\-S\-\_\-\-T\-Y\-P\-E}!image_reconstruct.h@{image\-\_\-reconstruct.\-h}}
+\paragraph[{image\-\_\-reconstruct\-\_\-\-P\-R\-E\-P\-R\-O\-C\-E\-S\-S\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf image\-\_\-reconstruct\-\_\-\-P\-R\-E\-P\-R\-O\-C\-E\-S\-S\-\_\-\-T\-Y\-P\-E}}}\label{a00013_ac74b45c91f9169f8834162f730054133}
+
+
+the type of different preprocessor methods 
+
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A}!image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}}\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A}}\item[{\em 
+\hypertarget{a00013_ac74b45c91f9169f8834162f730054133a317f8a8322a6c33d2484074f7fdcaf6c}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-N\-O\-N\-\_\-\-M\-A\-X\-I\-M\-A}\label{a00013_ac74b45c91f9169f8834162f730054133a317f8a8322a6c33d2484074f7fdcaf6c}
+}]In that case the edges will be increased by non maxima edge detection \index{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-M\-E\-D\-I\-A\-N@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-M\-E\-D\-I\-A\-N}!image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}}\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-M\-E\-D\-I\-A\-N@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-M\-E\-D\-I\-A\-N}}\item[{\em 
+\hypertarget{a00013_ac74b45c91f9169f8834162f730054133ac78b834cacb432cfd12c90c5c75a046a}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-M\-E\-D\-I\-A\-N}\label{a00013_ac74b45c91f9169f8834162f730054133ac78b834cacb432cfd12c90c5c75a046a}
+}]In that case the edges will be increased by Median filter \begin{DoxySeeAlso}{See Also}
+\hyperlink{a00011_ae99654f2d59a77ebcc06fbc4fcb46bf7}{image\-\_\-amplifier\-\_\-details\-\_\-up} 
+\end{DoxySeeAlso}
+\index{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N}!image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}}\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N}}\item[{\em 
+\hypertarget{a00013_ac74b45c91f9169f8834162f730054133a86ec104c82721cc77e8da13251cc8aee}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N}\label{a00013_ac74b45c91f9169f8834162f730054133a86ec104c82721cc77e8da13251cc8aee}
+}]In that case the edges will be increased by Gaussian filter \begin{DoxySeeAlso}{See Also}
+\hyperlink{a00011_ae99654f2d59a77ebcc06fbc4fcb46bf7}{image\-\_\-amplifier\-\_\-details\-\_\-up} 
+\end{DoxySeeAlso}
+\end{description}
+\end{Desc}
+
+
+
+Definition at line 85 of file image\-\_\-reconstruct.\-h.
+
+\hypertarget{a00013_ac27dbc8bff5d1fdaa463a1c1448e134b}{\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!image\-\_\-reconstruct\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D@{image\-\_\-reconstruct\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D}}
+\index{image\-\_\-reconstruct\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D@{image\-\_\-reconstruct\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D}!image_reconstruct.h@{image\-\_\-reconstruct.\-h}}
+\paragraph[{image\-\_\-reconstruct\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf image\-\_\-reconstruct\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D}}}\label{a00013_ac27dbc8bff5d1fdaa463a1c1448e134b}
+The enumeration of known edge scale method \begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-T\-O\-\_\-\-O\-R\-I\-G\-I\-N@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-T\-O\-\_\-\-O\-R\-I\-G\-I\-N}!image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}}\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-T\-O\-\_\-\-O\-R\-I\-G\-I\-N@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-T\-O\-\_\-\-O\-R\-I\-G\-I\-N}}\item[{\em 
+\hypertarget{a00013_ac27dbc8bff5d1fdaa463a1c1448e134ba5e1954dcfb78ec0f8f2e922e86201606}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-T\-O\-\_\-\-O\-R\-I\-G\-I\-N}\label{a00013_ac27dbc8bff5d1fdaa463a1c1448e134ba5e1954dcfb78ec0f8f2e922e86201606}
+}]Scale the preprocessed image like the original \index{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-U\-P@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-U\-P}!image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}}\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-U\-P@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-U\-P}}\item[{\em 
+\hypertarget{a00013_ac27dbc8bff5d1fdaa463a1c1448e134baa13c9e41d04d587b38ccd22a5537287d}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-U\-P}\label{a00013_ac27dbc8bff5d1fdaa463a1c1448e134baa13c9e41d04d587b38ccd22a5537287d}
+}]Scale the preprocessed image to the whole boundary \mbox{[}0,255\mbox{]} \index{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-C\-U\-T@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-C\-U\-T}!image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}}\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-C\-U\-T@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-C\-U\-T}}\item[{\em 
+\hypertarget{a00013_ac27dbc8bff5d1fdaa463a1c1448e134baf2ecc0b3d9e21790477928798352fc22}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-C\-U\-T}\label{a00013_ac27dbc8bff5d1fdaa463a1c1448e134baf2ecc0b3d9e21790477928798352fc22}
+}]Cut the preprocessed image in the boundary \index{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-A\-V\-G@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-A\-V\-G}!image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}}\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-A\-V\-G@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-A\-V\-G}}\item[{\em 
+\hypertarget{a00013_ac27dbc8bff5d1fdaa463a1c1448e134ba29162400adfc3650c6ab2e0631e99f66}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-S\-C\-A\-L\-E\-\_\-\-A\-V\-G}\label{a00013_ac27dbc8bff5d1fdaa463a1c1448e134ba29162400adfc3650c6ab2e0631e99f66}
+}]Get the preprocessed and the original image avarage \index{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-N\-U\-M\-\_\-\-O\-F\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-N\-U\-M\-\_\-\-O\-F\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D}!image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}}\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-N\-U\-M\-\_\-\-O\-F\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D@{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-N\-U\-M\-\_\-\-O\-F\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D}}\item[{\em 
+\hypertarget{a00013_ac27dbc8bff5d1fdaa463a1c1448e134ba74e9c7ac1cbad8c77f4fa1254dda8875}{I\-M\-A\-G\-E\-\_\-\-R\-E\-C\-O\-N\-S\-T\-R\-U\-C\-T\-\_\-\-N\-U\-M\-\_\-\-O\-F\-\_\-\-S\-C\-A\-L\-E\-\_\-\-M\-E\-T\-H\-O\-D}\label{a00013_ac27dbc8bff5d1fdaa463a1c1448e134ba74e9c7ac1cbad8c77f4fa1254dda8875}
+}]Number of known scale method. \end{description}
+\end{Desc}
+
+
+
+Definition at line 66 of file image\-\_\-reconstruct.\-h.
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{a00013_a82d8843b3a27e1edc2bf9ecfa9460341}{\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!image\-\_\-reconstruct\-\_\-calculate\-\_\-mse@{image\-\_\-reconstruct\-\_\-calculate\-\_\-mse}}
+\index{image\-\_\-reconstruct\-\_\-calculate\-\_\-mse@{image\-\_\-reconstruct\-\_\-calculate\-\_\-mse}!image_reconstruct.h@{image\-\_\-reconstruct.\-h}}
+\paragraph[{image\-\_\-reconstruct\-\_\-calculate\-\_\-mse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf image\-\_\-reconstruct\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-O\-D\-E} image\-\_\-reconstruct\-\_\-calculate\-\_\-mse (
+\begin{DoxyParamCaption}
+\item[{const {\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{original, }
+\item[{const {\bf image\-\_\-reconstruct\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-S} $\ast$}]{params, }
+\item[{{\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{result, }
+\item[{unsigned $\ast$}]{mse, }
+\item[{double $\ast$}]{psnr}
+\end{DoxyParamCaption}
+)}}\label{a00013_a82d8843b3a27e1edc2bf9ecfa9460341}
+
+
+Calculates the error during the reconstruction. 
+
+This function first call up the \hyperlink{a00013_a12bf63d8952ea0200b447f80e1f0eecd}{image\-\_\-reconstruct\-\_\-from\-\_\-lower\-\_\-image} function. After creates the Haar-\/transform of the approximation. On this image -\/ which has a same size as the original one -\/ calculates something similar like M\-S\-E (mean squered error). This function calculates not the second norm of this picture only the first, due to performance issues. The two norms -\/ if we are looking the pictures as vector space -\/ are equivalent, therefore it can be used to measure the error. The P\-S\-N\-R is calculated based on the modified mse value. It won't cause problem due to the equivality. 
+\begin{DoxyParams}{Parameters}
+{\em original} & the original image \\
+\hline
+{\em params} & the way of the intensity increasing \\
+\hline
+{\em result} & Result image with double size \\
+\hline
+{\em mse} & mean squered error \\
+\hline
+{\em psnr} & Peak signal-\/to-\/noise ratio \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The error code 
+\end{DoxyReturn}
+\hypertarget{a00013_a12bf63d8952ea0200b447f80e1f0eecd}{\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!image\-\_\-reconstruct\-\_\-from\-\_\-lower\-\_\-image@{image\-\_\-reconstruct\-\_\-from\-\_\-lower\-\_\-image}}
+\index{image\-\_\-reconstruct\-\_\-from\-\_\-lower\-\_\-image@{image\-\_\-reconstruct\-\_\-from\-\_\-lower\-\_\-image}!image_reconstruct.h@{image\-\_\-reconstruct.\-h}}
+\paragraph[{image\-\_\-reconstruct\-\_\-from\-\_\-lower\-\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf image\-\_\-reconstruct\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-O\-D\-E} image\-\_\-reconstruct\-\_\-from\-\_\-lower\-\_\-image (
+\begin{DoxyParamCaption}
+\item[{const {\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{original, }
+\item[{const {\bf image\-\_\-reconstruct\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-S} $\ast$}]{params, }
+\item[{{\bf image\-\_\-filter\-\_\-\-I\-M\-G} $\ast$}]{result}
+\end{DoxyParamCaption}
+)}}\label{a00013_a12bf63d8952ea0200b447f80e1f0eecd}
+
+
+Create a double sized image from the original. 
+
+First step the code increase the intensity of the details with the given mehtod. Thereafter calculate the horizontal and vertical edges. With these two images calculates the diagonal edges. Finally with an inverse Haar transformation calculates the bigger image. 
+\begin{DoxyParams}{Parameters}
+{\em original} & the original image \\
+\hline
+{\em params} & the way of the intensity increasing \\
+\hline
+{\em result} & Result image with double size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The error code 
+\end{DoxyReturn}
+\hypertarget{a00013_afb80bc758491d33d1398244a6b572d0e}{\index{image\-\_\-reconstruct.\-h@{image\-\_\-reconstruct.\-h}!image\-\_\-reconstruct\-\_\-trace\-\_\-parameter@{image\-\_\-reconstruct\-\_\-trace\-\_\-parameter}}
+\index{image\-\_\-reconstruct\-\_\-trace\-\_\-parameter@{image\-\_\-reconstruct\-\_\-trace\-\_\-parameter}!image_reconstruct.h@{image\-\_\-reconstruct.\-h}}
+\paragraph[{image\-\_\-reconstruct\-\_\-trace\-\_\-parameter}]{\setlength{\rightskip}{0pt plus 5cm}void image\-\_\-reconstruct\-\_\-trace\-\_\-parameter (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{parameter, }
+\item[{char}]{buffer\mbox{[}\-D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{a00013_afb80bc758491d33d1398244a6b572d0e}
+Trace a given parameter to the buffer. It is usefull to use with the debug\-\_\-util for trace. 
+\begin{DoxyParams}{Parameters}
+{\em parameter,\-:} & parameter to print out \\
+\hline
+{\em buffer,\-:} & the parameter trace will be written into this buffer. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,259 @@
+\hypertarget{a00001}{\subsection{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/debug\-\_\-util/debug.h File Reference}
+\label{a00001}\index{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/debug\-\_\-util/debug.\-h@{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/debug\-\_\-util/debug.\-h}}
+}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00001_a6157e03a309e5738d19f281c7d260b4a}{\#define {\bfseries D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}~4096}\label{a00001_a6157e03a309e5738d19f281c7d260b4a}
+
+\item 
+\#define \hyperlink{a00001_a6b158bcfd4ad0e669a9f74d0235bdc03}{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E}(level, format,...)
+\item 
+\#define \hyperlink{a00001_af4439bbbf7808aa4608088c5fc8762e6}{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-D\-E\-B\-U\-G}(level, format,...)
+\item 
+\#define \hyperlink{a00001_a129eccb79d3579b55a92eeed8c6d2660}{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-E\-R\-R\-O\-R}(level, format,...)
+\item 
+\#define \hyperlink{a00001_a6a89ca9ad50e359c09f5bed6858297c3}{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E\-\_\-\-E\-L\-E\-M\-E\-N\-T}(level, element, function)
+\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{a00001_aea1a1da48f9be116b8ec308d8bc29b76}{debug\-\_\-util\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N} )(const char $\ast$)
+\item 
+typedef void($\ast$ \hyperlink{a00001_acb797b3ccc582e3330d3cf3e761b3616}{debug\-\_\-util\-\_\-\-E\-L\-E\-M\-E\-N\-T\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N} )(void $\ast$element, char buffer\mbox{[}D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E\mbox{]})
+\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{a00001_aa67647dffda81c4bf40a22606de434db}{debug\-\_\-util\-\_\-\-L\-E\-V\-E\-L\-S} \{ \hyperlink{a00001_aa67647dffda81c4bf40a22606de434dba5d2e193de4fef2db09055144384e6c29}{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-N\-O\-N\-E} =  0, 
+\hyperlink{a00001_aa67647dffda81c4bf40a22606de434dba8cfdc9de8fc139c9bcc40ef2324f1547}{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T\-R\-A\-C\-E} =  1, 
+\hyperlink{a00001_aa67647dffda81c4bf40a22606de434dba6063a46d3dacfc5c0352f90d38621342}{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-D\-E\-B\-U\-G} =  16, 
+\hyperlink{a00001_aa67647dffda81c4bf40a22606de434dbab9f2453beabe40f7737958371fdaa120}{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-E\-R\-R\-O\-R} =  32
+ \}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00001_ab0003a6a8fd130a4b50ac633f6bf3e6e}{debug\-\_\-util\-\_\-set\-\_\-trace\-\_\-function} (\hyperlink{a00001_aea1a1da48f9be116b8ec308d8bc29b76}{debug\-\_\-util\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N} trace)
+\item 
+void \hyperlink{a00001_ab013a5a2e9972c0c09a0bba4baccaeaf}{debug\-\_\-util\-\_\-set\-\_\-level} (const \hyperlink{a00001_aa67647dffda81c4bf40a22606de434db}{debug\-\_\-util\-\_\-\-L\-E\-V\-E\-L\-S} level)
+\item 
+void \hyperlink{a00001_a3c7765ea1964ef3f9afa6fc919b58196}{debug\-\_\-util\-\_\-trace} (unsigned level, const char $\ast$file, unsigned line, const char $\ast$format,...)
+\item 
+void \hyperlink{a00001_adcc77339ec3396c54a56cae414e4866e}{debug\-\_\-util\-\_\-trace\-\_\-element} (unsigned level, const char $\ast$file, unsigned line, void $\ast$element, \hyperlink{a00001_acb797b3ccc582e3330d3cf3e761b3616}{debug\-\_\-util\-\_\-\-E\-L\-E\-M\-E\-N\-T\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N} function)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+This file is the main file of debug. Use this module only with macros, like D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E, D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-E\-R\-R\-O\-R, D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-D\-E\-B\-U\-G. For activate traces you have to define the D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-A\-C\-T\-I\-V\-A\-T\-E, without it, this module has no effect. 
+
+Definition in file \hyperlink{a00001_source}{debug.\-h}.
+
+
+
+\subsubsection{Macro Definition Documentation}
+\hypertarget{a00001_af4439bbbf7808aa4608088c5fc8762e6}{\index{debug.\-h@{debug.\-h}!D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-D\-E\-B\-U\-G@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-D\-E\-B\-U\-G}}
+\index{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-D\-E\-B\-U\-G@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-D\-E\-B\-U\-G}!debug.h@{debug.\-h}}
+\paragraph[{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-D\-E\-B\-U\-G(
+\begin{DoxyParamCaption}
+\item[{}]{level, }
+\item[{}]{format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{a00001_af4439bbbf7808aa4608088c5fc8762e6}
+Debug macro. Trace will be visible if a higher or the given level is active. 
+\begin{DoxyParams}{Parameters}
+{\em level,\-:} & level of the traced information, from 0 till 14 \\
+\hline
+{\em format,\-:} & format of the output \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file debug.\-h.
+
+\hypertarget{a00001_a129eccb79d3579b55a92eeed8c6d2660}{\index{debug.\-h@{debug.\-h}!D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-E\-R\-R\-O\-R@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-E\-R\-R\-O\-R}}
+\index{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-E\-R\-R\-O\-R@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-E\-R\-R\-O\-R}!debug.h@{debug.\-h}}
+\paragraph[{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-E\-R\-R\-O\-R(
+\begin{DoxyParamCaption}
+\item[{}]{level, }
+\item[{}]{format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{a00001_a129eccb79d3579b55a92eeed8c6d2660}
+Error macro. Trace will be visible always, if D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-A\-C\-T\-I\-V\-A\-T\-E is defined. 
+\begin{DoxyParams}{Parameters}
+{\em level,\-:} & level of the traced information, from 0 till 14 \\
+\hline
+{\em format,\-:} & format of the output \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file debug.\-h.
+
+\hypertarget{a00001_a6b158bcfd4ad0e669a9f74d0235bdc03}{\index{debug.\-h@{debug.\-h}!D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E}}
+\index{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E}!debug.h@{debug.\-h}}
+\paragraph[{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E(
+\begin{DoxyParamCaption}
+\item[{}]{level, }
+\item[{}]{format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{a00001_a6b158bcfd4ad0e669a9f74d0235bdc03}
+Trace macro. Trace will be visible if a higher or the given level is active. 
+\begin{DoxyParams}{Parameters}
+{\em level,\-:} & level of the traced information, from 0 till 14 \\
+\hline
+{\em format,\-:} & format of the output \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file debug.\-h.
+
+\hypertarget{a00001_a6a89ca9ad50e359c09f5bed6858297c3}{\index{debug.\-h@{debug.\-h}!D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E\-\_\-\-E\-L\-E\-M\-E\-N\-T@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E\-\_\-\-E\-L\-E\-M\-E\-N\-T}}
+\index{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E\-\_\-\-E\-L\-E\-M\-E\-N\-T@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E\-\_\-\-E\-L\-E\-M\-E\-N\-T}!debug.h@{debug.\-h}}
+\paragraph[{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E\-\_\-\-E\-L\-E\-M\-E\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-T\-R\-A\-C\-E\-\_\-\-E\-L\-E\-M\-E\-N\-T(
+\begin{DoxyParamCaption}
+\item[{}]{level, }
+\item[{}]{element, }
+\item[{}]{function}
+\end{DoxyParamCaption}
+)}}\label{a00001_a6a89ca9ad50e359c09f5bed6858297c3}
+Trace an element with the given function 
+\begin{DoxyParams}{Parameters}
+{\em level} & legel of the trace \\
+\hline
+{\em element} & the object to trace \\
+\hline
+{\em function} & function wich can trace an element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{a00001_acb797b3ccc582e3330d3cf3e761b3616}{debug\-\_\-util\-\_\-\-E\-L\-E\-M\-E\-N\-T\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N} 
+\end{DoxySeeAlso}
+
+
+Definition at line 57 of file debug.\-h.
+
+
+
+\subsubsection{Typedef Documentation}
+\hypertarget{a00001_acb797b3ccc582e3330d3cf3e761b3616}{\index{debug.\-h@{debug.\-h}!debug\-\_\-util\-\_\-\-E\-L\-E\-M\-E\-N\-T\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N@{debug\-\_\-util\-\_\-\-E\-L\-E\-M\-E\-N\-T\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N}}
+\index{debug\-\_\-util\-\_\-\-E\-L\-E\-M\-E\-N\-T\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N@{debug\-\_\-util\-\_\-\-E\-L\-E\-M\-E\-N\-T\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N}!debug.h@{debug.\-h}}
+\paragraph[{debug\-\_\-util\-\_\-\-E\-L\-E\-M\-E\-N\-T\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ debug\-\_\-util\-\_\-\-E\-L\-E\-M\-E\-N\-T\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N)(void $\ast$element, char buffer\mbox{[}D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E\mbox{]})}}\label{a00001_acb797b3ccc582e3330d3cf3e761b3616}
+function which prints its result to the given buffer 
+\begin{DoxyParams}{Parameters}
+{\em element} & element to trace \\
+\hline
+{\em buffer} & Buffer to store the trace content \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file debug.\-h.
+
+\hypertarget{a00001_aea1a1da48f9be116b8ec308d8bc29b76}{\index{debug.\-h@{debug.\-h}!debug\-\_\-util\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N@{debug\-\_\-util\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N}}
+\index{debug\-\_\-util\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N@{debug\-\_\-util\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N}!debug.h@{debug.\-h}}
+\paragraph[{debug\-\_\-util\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ debug\-\_\-util\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N)(const char $\ast$)}}\label{a00001_aea1a1da48f9be116b8ec308d8bc29b76}
+Trace function 
+
+Definition at line 77 of file debug.\-h.
+
+
+
+\subsubsection{Enumeration Type Documentation}
+\hypertarget{a00001_aa67647dffda81c4bf40a22606de434db}{\index{debug.\-h@{debug.\-h}!debug\-\_\-util\-\_\-\-L\-E\-V\-E\-L\-S@{debug\-\_\-util\-\_\-\-L\-E\-V\-E\-L\-S}}
+\index{debug\-\_\-util\-\_\-\-L\-E\-V\-E\-L\-S@{debug\-\_\-util\-\_\-\-L\-E\-V\-E\-L\-S}!debug.h@{debug.\-h}}
+\paragraph[{debug\-\_\-util\-\_\-\-L\-E\-V\-E\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf debug\-\_\-util\-\_\-\-L\-E\-V\-E\-L\-S}}}\label{a00001_aa67647dffda81c4bf40a22606de434db}
+Debug level definitions. 
+\begin{DoxyCode}
+\hyperlink{a00001_aa67647dffda81c4bf40a22606de434dba8cfdc9de8fc139c9bcc40ef2324f1547}{DEBUG\_UTIL\_LEVEL\_TRACE} + 1
+\end{DoxyCode}
+ \begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-N\-O\-N\-E@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-N\-O\-N\-E}!debug.\-h@{debug.\-h}}\index{debug.\-h@{debug.\-h}!D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-N\-O\-N\-E@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-N\-O\-N\-E}}\item[{\em 
+\hypertarget{a00001_aa67647dffda81c4bf40a22606de434dba5d2e193de4fef2db09055144384e6c29}{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-N\-O\-N\-E}\label{a00001_aa67647dffda81c4bf40a22606de434dba5d2e193de4fef2db09055144384e6c29}
+}]000000 Disable debug \index{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T\-R\-A\-C\-E@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T\-R\-A\-C\-E}!debug.\-h@{debug.\-h}}\index{debug.\-h@{debug.\-h}!D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T\-R\-A\-C\-E@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T\-R\-A\-C\-E}}\item[{\em 
+\hypertarget{a00001_aa67647dffda81c4bf40a22606de434dba8cfdc9de8fc139c9bcc40ef2324f1547}{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-T\-R\-A\-C\-E}\label{a00001_aa67647dffda81c4bf40a22606de434dba8cfdc9de8fc139c9bcc40ef2324f1547}
+}]000001 Trace levels, there are 14 \index{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-D\-E\-B\-U\-G@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-D\-E\-B\-U\-G}!debug.\-h@{debug.\-h}}\index{debug.\-h@{debug.\-h}!D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-D\-E\-B\-U\-G@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-D\-E\-B\-U\-G}}\item[{\em 
+\hypertarget{a00001_aa67647dffda81c4bf40a22606de434dba6063a46d3dacfc5c0352f90d38621342}{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-D\-E\-B\-U\-G}\label{a00001_aa67647dffda81c4bf40a22606de434dba6063a46d3dacfc5c0352f90d38621342}
+}]010000 Debug levels, there are 15 \index{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-E\-R\-R\-O\-R@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-E\-R\-R\-O\-R}!debug.\-h@{debug.\-h}}\index{debug.\-h@{debug.\-h}!D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-E\-R\-R\-O\-R@{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{a00001_aa67647dffda81c4bf40a22606de434dbab9f2453beabe40f7737958371fdaa120}{D\-E\-B\-U\-G\-\_\-\-U\-T\-I\-L\-\_\-\-L\-E\-V\-E\-L\-\_\-\-E\-R\-R\-O\-R}\label{a00001_aa67647dffda81c4bf40a22606de434dbab9f2453beabe40f7737958371fdaa120}
+}]100000 Error levels, unlimited \end{description}
+\end{Desc}
+
+
+
+Definition at line 66 of file debug.\-h.
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{a00001_ab013a5a2e9972c0c09a0bba4baccaeaf}{\index{debug.\-h@{debug.\-h}!debug\-\_\-util\-\_\-set\-\_\-level@{debug\-\_\-util\-\_\-set\-\_\-level}}
+\index{debug\-\_\-util\-\_\-set\-\_\-level@{debug\-\_\-util\-\_\-set\-\_\-level}!debug.h@{debug.\-h}}
+\paragraph[{debug\-\_\-util\-\_\-set\-\_\-level}]{\setlength{\rightskip}{0pt plus 5cm}void debug\-\_\-util\-\_\-set\-\_\-level (
+\begin{DoxyParamCaption}
+\item[{const {\bf debug\-\_\-util\-\_\-\-L\-E\-V\-E\-L\-S}}]{level}
+\end{DoxyParamCaption}
+)}}\label{a00001_ab013a5a2e9972c0c09a0bba4baccaeaf}
+Set the current debug level 
+\begin{DoxyParams}{Parameters}
+{\em level,\-:} & Activate the given level \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00001_ab0003a6a8fd130a4b50ac633f6bf3e6e}{\index{debug.\-h@{debug.\-h}!debug\-\_\-util\-\_\-set\-\_\-trace\-\_\-function@{debug\-\_\-util\-\_\-set\-\_\-trace\-\_\-function}}
+\index{debug\-\_\-util\-\_\-set\-\_\-trace\-\_\-function@{debug\-\_\-util\-\_\-set\-\_\-trace\-\_\-function}!debug.h@{debug.\-h}}
+\paragraph[{debug\-\_\-util\-\_\-set\-\_\-trace\-\_\-function}]{\setlength{\rightskip}{0pt plus 5cm}void debug\-\_\-util\-\_\-set\-\_\-trace\-\_\-function (
+\begin{DoxyParamCaption}
+\item[{{\bf debug\-\_\-util\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N}}]{trace}
+\end{DoxyParamCaption}
+)}}\label{a00001_ab0003a6a8fd130a4b50ac633f6bf3e6e}
+Setter function for trace \hypertarget{a00001_a3c7765ea1964ef3f9afa6fc919b58196}{\index{debug.\-h@{debug.\-h}!debug\-\_\-util\-\_\-trace@{debug\-\_\-util\-\_\-trace}}
+\index{debug\-\_\-util\-\_\-trace@{debug\-\_\-util\-\_\-trace}!debug.h@{debug.\-h}}
+\paragraph[{debug\-\_\-util\-\_\-trace}]{\setlength{\rightskip}{0pt plus 5cm}void debug\-\_\-util\-\_\-trace (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{level, }
+\item[{const char $\ast$}]{file, }
+\item[{unsigned}]{line, }
+\item[{const char $\ast$}]{format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{a00001_a3c7765ea1964ef3f9afa6fc919b58196}
+Debug function. 
+\begin{DoxyParams}{Parameters}
+{\em level,\-:} & Level of the trace \\
+\hline
+{\em file,\-:} & current file. \\
+\hline
+{\em line,\-:} & current line. \\
+\hline
+{\em format,\-:} & Output format. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00001_adcc77339ec3396c54a56cae414e4866e}{\index{debug.\-h@{debug.\-h}!debug\-\_\-util\-\_\-trace\-\_\-element@{debug\-\_\-util\-\_\-trace\-\_\-element}}
+\index{debug\-\_\-util\-\_\-trace\-\_\-element@{debug\-\_\-util\-\_\-trace\-\_\-element}!debug.h@{debug.\-h}}
+\paragraph[{debug\-\_\-util\-\_\-trace\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void debug\-\_\-util\-\_\-trace\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{level, }
+\item[{const char $\ast$}]{file, }
+\item[{unsigned}]{line, }
+\item[{void $\ast$}]{element, }
+\item[{{\bf debug\-\_\-util\-\_\-\-E\-L\-E\-M\-E\-N\-T\-\_\-\-T\-R\-A\-C\-E\-\_\-\-F\-U\-N\-T\-I\-O\-N}}]{function}
+\end{DoxyParamCaption}
+)}}\label{a00001_adcc77339ec3396c54a56cae414e4866e}
+Trace function for different kind of elements 
+\begin{DoxyParams}{Parameters}
+{\em level,\-:} & Level of the trace \\
+\hline
+{\em file,\-:} & current file. \\
+\hline
+{\em line,\-:} & current line. \\
+\hline
+{\em element,\-:} & element to trace \\
+\hline
+{\em function,\-:} & the way of the trace \\
+\hline
+\end{DoxyParams}

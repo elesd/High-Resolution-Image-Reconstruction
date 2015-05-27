@@ -1,0 +1,107 @@
+\hypertarget{a00008}{\subsection{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/gaussian\-\_\-filter.h File Reference}
+\label{a00008}\index{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/gaussian\-\_\-filter.\-h@{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/hrir/gaussian\-\_\-filter.\-h}}
+}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{a00008_a316f61d728c11dcb3990199530349adb}{gaussian\-\_\-filter\-\_\-calc\-\_\-with\-\_\-sigma} (const double x, const double y, const double sigma)
+\begin{DoxyCompactList}\small\item\em 2 dimensional Gaussian function \end{DoxyCompactList}\item 
+double \hyperlink{a00008_ada1fef0f18b43799dcc82232bf786ad5}{gaussian\-\_\-filter\-\_\-calc} (const double x, const double y)
+\begin{DoxyCompactList}\small\item\em 2 dimensional Gaussian function \end{DoxyCompactList}\item 
+void \hyperlink{a00008_ac5f9dcbf038d161db3a68a80657990e4}{gaussian\-\_\-filter\-\_\-set\-\_\-sigma} (const double sigma)
+\begin{DoxyCompactList}\small\item\em Setter for the sigma parameter in the context. \end{DoxyCompactList}\item 
+double \hyperlink{a00008_aae1cf8b3c6e0bd2b8c4f9ade61501421}{gaussian\-\_\-filter\-\_\-get\-\_\-sigma} (void)
+\begin{DoxyCompactList}\small\item\em Getter for the sigma parameter in the context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Gauss filter implementation. 
+
+Definition in file \hyperlink{a00008_source}{gaussian\-\_\-filter.\-h}.
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{a00008_ada1fef0f18b43799dcc82232bf786ad5}{\index{gaussian\-\_\-filter.\-h@{gaussian\-\_\-filter.\-h}!gaussian\-\_\-filter\-\_\-calc@{gaussian\-\_\-filter\-\_\-calc}}
+\index{gaussian\-\_\-filter\-\_\-calc@{gaussian\-\_\-filter\-\_\-calc}!gaussian_filter.h@{gaussian\-\_\-filter.\-h}}
+\paragraph[{gaussian\-\_\-filter\-\_\-calc}]{\setlength{\rightskip}{0pt plus 5cm}double gaussian\-\_\-filter\-\_\-calc (
+\begin{DoxyParamCaption}
+\item[{const double}]{x, }
+\item[{const double}]{y}
+\end{DoxyParamCaption}
+)}}\label{a00008_ada1fef0f18b43799dcc82232bf786ad5}
+
+
+2 dimensional Gaussian function 
+
+$ g(x, y) = \frac{1}{2 \Pi \sigma^2} \cdot exp(-\frac{x^2 + y^2}{2 \sigma^2}) $ In this function calling the sigma parameter cames from the context. \begin{DoxySeeAlso}{See Also}
+\hyperlink{a00008_ac5f9dcbf038d161db3a68a80657990e4}{gaussian\-\_\-filter\-\_\-set\-\_\-sigma} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate \\
+\hline
+{\em y} & the y coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result of the gaussian function in the given coordinates. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function is faster, but not executable in paralell way! 
+\end{DoxyNote}
+\hypertarget{a00008_a316f61d728c11dcb3990199530349adb}{\index{gaussian\-\_\-filter.\-h@{gaussian\-\_\-filter.\-h}!gaussian\-\_\-filter\-\_\-calc\-\_\-with\-\_\-sigma@{gaussian\-\_\-filter\-\_\-calc\-\_\-with\-\_\-sigma}}
+\index{gaussian\-\_\-filter\-\_\-calc\-\_\-with\-\_\-sigma@{gaussian\-\_\-filter\-\_\-calc\-\_\-with\-\_\-sigma}!gaussian_filter.h@{gaussian\-\_\-filter.\-h}}
+\paragraph[{gaussian\-\_\-filter\-\_\-calc\-\_\-with\-\_\-sigma}]{\setlength{\rightskip}{0pt plus 5cm}double gaussian\-\_\-filter\-\_\-calc\-\_\-with\-\_\-sigma (
+\begin{DoxyParamCaption}
+\item[{const double}]{x, }
+\item[{const double}]{y, }
+\item[{const double}]{sigma}
+\end{DoxyParamCaption}
+)}}\label{a00008_a316f61d728c11dcb3990199530349adb}
+
+
+2 dimensional Gaussian function 
+
+$ g(x, y) = \frac{1}{2 \Pi \sigma^2} \cdot exp(-\frac{x^2 + y^2}{2 \sigma^2}) $ 
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate \\
+\hline
+{\em y} & the y coordinate \\
+\hline
+{\em sigma} & the sigma parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result of the gaussian function in the given coordinates. 
+\end{DoxyReturn}
+\hypertarget{a00008_aae1cf8b3c6e0bd2b8c4f9ade61501421}{\index{gaussian\-\_\-filter.\-h@{gaussian\-\_\-filter.\-h}!gaussian\-\_\-filter\-\_\-get\-\_\-sigma@{gaussian\-\_\-filter\-\_\-get\-\_\-sigma}}
+\index{gaussian\-\_\-filter\-\_\-get\-\_\-sigma@{gaussian\-\_\-filter\-\_\-get\-\_\-sigma}!gaussian_filter.h@{gaussian\-\_\-filter.\-h}}
+\paragraph[{gaussian\-\_\-filter\-\_\-get\-\_\-sigma}]{\setlength{\rightskip}{0pt plus 5cm}double gaussian\-\_\-filter\-\_\-get\-\_\-sigma (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{a00008_aae1cf8b3c6e0bd2b8c4f9ade61501421}
+
+
+Getter for the sigma parameter in the context. 
+
+\begin{DoxyReturn}{Returns}
+the sigma value of the context 
+\end{DoxyReturn}
+\hypertarget{a00008_ac5f9dcbf038d161db3a68a80657990e4}{\index{gaussian\-\_\-filter.\-h@{gaussian\-\_\-filter.\-h}!gaussian\-\_\-filter\-\_\-set\-\_\-sigma@{gaussian\-\_\-filter\-\_\-set\-\_\-sigma}}
+\index{gaussian\-\_\-filter\-\_\-set\-\_\-sigma@{gaussian\-\_\-filter\-\_\-set\-\_\-sigma}!gaussian_filter.h@{gaussian\-\_\-filter.\-h}}
+\paragraph[{gaussian\-\_\-filter\-\_\-set\-\_\-sigma}]{\setlength{\rightskip}{0pt plus 5cm}void gaussian\-\_\-filter\-\_\-set\-\_\-sigma (
+\begin{DoxyParamCaption}
+\item[{const double}]{sigma}
+\end{DoxyParamCaption}
+)}}\label{a00008_ac5f9dcbf038d161db3a68a80657990e4}
+
+
+Setter for the sigma parameter in the context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sigma} & the new sigma value for the context \\
+\hline
+\end{DoxyParams}

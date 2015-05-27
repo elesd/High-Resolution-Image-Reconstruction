@@ -1,0 +1,252 @@
+\hypertarget{a00011}{\subsection{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/ai\-\_\-evol/priority\-\_\-queue.h File Reference}
+\label{a00011}\index{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/ai\-\_\-evol/priority\-\_\-queue.\-h@{/home/elesd/programing/github/smart\-\_\-hrir/source/libs/include/ai\-\_\-evol/priority\-\_\-queue.\-h}}
+}
+
+
+Priority queue implementation.  
+
+
+{\ttfamily \#include \char`\"{}list.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{a00006}{priority\-\_\-queue\-\_\-\-E\-L\-E\-M\-E\-N\-T}
+\item 
+struct \hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E}
+\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{a00011_a8b0749461227267e0856a15ce59854c1}{priority\-\_\-queue\-\_\-\-D\-E\-S\-T\-R\-O\-Y} )(void $\ast$element)
+\begin{DoxyCompactList}\small\item\em callback function to destroy an element \end{DoxyCompactList}\item 
+typedef void $\ast$($\ast$ \hyperlink{a00011_a8be2278e923a91d0166c68a26e438ee0}{priority\-\_\-queue\-\_\-\-C\-O\-P\-Y} )(void $\ast$dest, const void $\ast$element, size\-\_\-t size)
+\begin{DoxyCompactList}\small\item\em callback function to clone an element \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00011_a95235adc9e596748082c66067fae13dc}{priority\-\_\-queue\-\_\-init} (\hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$queue, const unsigned capacity, const unsigned element\-\_\-size, \hyperlink{a00011_a8b0749461227267e0856a15ce59854c1}{priority\-\_\-queue\-\_\-\-D\-E\-S\-T\-R\-O\-Y} destroy\-\_\-func, \hyperlink{a00011_a8be2278e923a91d0166c68a26e438ee0}{priority\-\_\-queue\-\_\-\-C\-O\-P\-Y} clone\-\_\-func)
+\item 
+void \hyperlink{a00011_ab66c88738d726c25c13b70d983d59395}{priority\-\_\-queue\-\_\-init\-\_\-like} (\hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$queue, const \hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$other)
+\item 
+void \hyperlink{a00011_a072c6297756a780f0bdb180669f7e675}{priority\-\_\-queue\-\_\-insert} (\hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$queue, const void $\ast$element, const int rank)
+\item 
+void \hyperlink{a00011_afdd086076bc9e624185b0bce2562db59}{priority\-\_\-queue\-\_\-pop} (\hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$queue)
+\item 
+\hyperlink{a00006}{priority\-\_\-queue\-\_\-\-E\-L\-E\-M\-E\-N\-T} \hyperlink{a00011_af21869cc07d5231e36eb36a338569948}{priority\-\_\-queue\-\_\-first} (const \hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$queue)
+\item 
+void \hyperlink{a00011_af517dcd382eeb2228104ba92d5064c8e}{priority\-\_\-queue\-\_\-destroy} (\hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$queue)
+\item 
+unsigned \hyperlink{a00011_a1472e39366d3b49bb0e04158791786e4}{priority\-\_\-queue\-\_\-capacity} (const \hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$queue)
+\item 
+unsigned \hyperlink{a00011_a3c7adec21393e53de36fc762d3e7e205}{priority\-\_\-queue\-\_\-current\-\_\-size} (const \hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$queue)
+\item 
+\hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} \hyperlink{a00011_a0329ab35ba1e693d907411671560da63}{priority\-\_\-queue\-\_\-copy} (const \hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$queue)
+\item 
+unsigned \hyperlink{a00011_aa5c2bd8a1c7079c6181d78dd72369051}{priority\-\_\-queue\-\_\-element\-\_\-size} (const \hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$queue)
+\item 
+\hyperlink{a00004}{list\-\_\-\-L\-I\-S\-T} \hyperlink{a00011_a24c1dace7ca91d56903ed656c57fddfc}{priority\-\_\-queue\-\_\-to\-\_\-list} (const \hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$queue)
+\item 
+void \hyperlink{a00011_a15f272d0534958950428a5fa2ababb1a}{priority\-\_\-queue\-\_\-pop\-\_\-back} (\hyperlink{a00007}{priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$queue, unsigned num\-\_\-of\-\_\-elements)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Priority queue implementation. This implementation is based on a heap. 
+
+Definition in file \hyperlink{a00011_source}{priority\-\_\-queue.\-h}.
+
+
+
+\subsubsection{Typedef Documentation}
+\hypertarget{a00011_a8be2278e923a91d0166c68a26e438ee0}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-\-C\-O\-P\-Y@{priority\-\_\-queue\-\_\-\-C\-O\-P\-Y}}
+\index{priority\-\_\-queue\-\_\-\-C\-O\-P\-Y@{priority\-\_\-queue\-\_\-\-C\-O\-P\-Y}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-\-C\-O\-P\-Y}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$($\ast$ priority\-\_\-queue\-\_\-\-C\-O\-P\-Y)(void $\ast$dest, const void $\ast$element, size\-\_\-t size)}}\label{a00011_a8be2278e923a91d0166c68a26e438ee0}
+
+
+callback function to clone an element 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & the destination of the copy \\
+\hline
+{\em element} & the element to copy \\
+\hline
+{\em size} & size of the element \\
+\hline
+{\em returns} & pointer to destination \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file priority\-\_\-queue.\-h.
+
+\hypertarget{a00011_a8b0749461227267e0856a15ce59854c1}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-\-D\-E\-S\-T\-R\-O\-Y@{priority\-\_\-queue\-\_\-\-D\-E\-S\-T\-R\-O\-Y}}
+\index{priority\-\_\-queue\-\_\-\-D\-E\-S\-T\-R\-O\-Y@{priority\-\_\-queue\-\_\-\-D\-E\-S\-T\-R\-O\-Y}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-\-D\-E\-S\-T\-R\-O\-Y}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ priority\-\_\-queue\-\_\-\-D\-E\-S\-T\-R\-O\-Y)(void $\ast$element)}}\label{a00011_a8b0749461227267e0856a15ce59854c1}
+
+
+callback function to destroy an element 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & the destroyable element \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file priority\-\_\-queue.\-h.
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{a00011_a1472e39366d3b49bb0e04158791786e4}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-capacity@{priority\-\_\-queue\-\_\-capacity}}
+\index{priority\-\_\-queue\-\_\-capacity@{priority\-\_\-queue\-\_\-capacity}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}unsigned priority\-\_\-queue\-\_\-capacity (
+\begin{DoxyParamCaption}
+\item[{const {\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{queue}
+\end{DoxyParamCaption}
+)}}\label{a00011_a1472e39366d3b49bb0e04158791786e4}
+\begin{DoxyReturn}{Returns}
+Capacity of the given queue 
+\end{DoxyReturn}
+\hypertarget{a00011_a0329ab35ba1e693d907411671560da63}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-copy@{priority\-\_\-queue\-\_\-copy}}
+\index{priority\-\_\-queue\-\_\-copy@{priority\-\_\-queue\-\_\-copy}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-copy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} priority\-\_\-queue\-\_\-copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{queue}
+\end{DoxyParamCaption}
+)}}\label{a00011_a0329ab35ba1e693d907411671560da63}
+
+\begin{DoxyParams}{Parameters}
+{\em queue,\-:} & queue to copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A deep copy of the input 
+\end{DoxyReturn}
+\hypertarget{a00011_a3c7adec21393e53de36fc762d3e7e205}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-current\-\_\-size@{priority\-\_\-queue\-\_\-current\-\_\-size}}
+\index{priority\-\_\-queue\-\_\-current\-\_\-size@{priority\-\_\-queue\-\_\-current\-\_\-size}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-current\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned priority\-\_\-queue\-\_\-current\-\_\-size (
+\begin{DoxyParamCaption}
+\item[{const {\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{queue}
+\end{DoxyParamCaption}
+)}}\label{a00011_a3c7adec21393e53de36fc762d3e7e205}
+\begin{DoxyReturn}{Returns}
+Current size of the given queue 
+\end{DoxyReturn}
+\hypertarget{a00011_af517dcd382eeb2228104ba92d5064c8e}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-destroy@{priority\-\_\-queue\-\_\-destroy}}
+\index{priority\-\_\-queue\-\_\-destroy@{priority\-\_\-queue\-\_\-destroy}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}void priority\-\_\-queue\-\_\-destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{queue}
+\end{DoxyParamCaption}
+)}}\label{a00011_af517dcd382eeb2228104ba92d5064c8e}
+Free the memory, which is used by the given queue \hypertarget{a00011_aa5c2bd8a1c7079c6181d78dd72369051}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-element\-\_\-size@{priority\-\_\-queue\-\_\-element\-\_\-size}}
+\index{priority\-\_\-queue\-\_\-element\-\_\-size@{priority\-\_\-queue\-\_\-element\-\_\-size}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-element\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned priority\-\_\-queue\-\_\-element\-\_\-size (
+\begin{DoxyParamCaption}
+\item[{const {\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{queue}
+\end{DoxyParamCaption}
+)}}\label{a00011_aa5c2bd8a1c7079c6181d78dd72369051}
+\begin{DoxyReturn}{Returns}
+Elements size of the given queue 
+\end{DoxyReturn}
+\hypertarget{a00011_af21869cc07d5231e36eb36a338569948}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-first@{priority\-\_\-queue\-\_\-first}}
+\index{priority\-\_\-queue\-\_\-first@{priority\-\_\-queue\-\_\-first}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-first}]{\setlength{\rightskip}{0pt plus 5cm}{\bf priority\-\_\-queue\-\_\-\-E\-L\-E\-M\-E\-N\-T} priority\-\_\-queue\-\_\-first (
+\begin{DoxyParamCaption}
+\item[{const {\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{queue}
+\end{DoxyParamCaption}
+)}}\label{a00011_af21869cc07d5231e36eb36a338569948}
+Getter for the maximum element \hypertarget{a00011_a95235adc9e596748082c66067fae13dc}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-init@{priority\-\_\-queue\-\_\-init}}
+\index{priority\-\_\-queue\-\_\-init@{priority\-\_\-queue\-\_\-init}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void priority\-\_\-queue\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{queue, }
+\item[{const unsigned}]{capacity, }
+\item[{const unsigned}]{element\-\_\-size, }
+\item[{{\bf priority\-\_\-queue\-\_\-\-D\-E\-S\-T\-R\-O\-Y}}]{destroy\-\_\-func, }
+\item[{{\bf priority\-\_\-queue\-\_\-\-C\-O\-P\-Y}}]{clone\-\_\-func}
+\end{DoxyParamCaption}
+)}}\label{a00011_a95235adc9e596748082c66067fae13dc}
+Create a new queue. 
+\begin{DoxyParams}{Parameters}
+{\em queue} & Queue to create \\
+\hline
+{\em element\-\_\-size} & The size of the elemets in the queue. \\
+\hline
+{\em capacity} & Maximum capacity of the queue. \\
+\hline
+{\em destroy\-\_\-func} & function to distroy an element. If it N\-U\-L\-L, only a free will be done. \\
+\hline
+{\em copy\-\_\-func} & function to copy an element. If it N\-U\-L\-L, memcpy is the default \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00011_ab66c88738d726c25c13b70d983d59395}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-init\-\_\-like@{priority\-\_\-queue\-\_\-init\-\_\-like}}
+\index{priority\-\_\-queue\-\_\-init\-\_\-like@{priority\-\_\-queue\-\_\-init\-\_\-like}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-init\-\_\-like}]{\setlength{\rightskip}{0pt plus 5cm}void priority\-\_\-queue\-\_\-init\-\_\-like (
+\begin{DoxyParamCaption}
+\item[{{\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{queue, }
+\item[{const {\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{other}
+\end{DoxyParamCaption}
+)}}\label{a00011_ab66c88738d726c25c13b70d983d59395}
+Create a new queue similary like the other one. 
+\begin{DoxyParams}{Parameters}
+{\em queue} & Queue to create \\
+\hline
+{\em other} & This queue's data is used during init \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00011_a072c6297756a780f0bdb180669f7e675}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-insert@{priority\-\_\-queue\-\_\-insert}}
+\index{priority\-\_\-queue\-\_\-insert@{priority\-\_\-queue\-\_\-insert}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-insert}]{\setlength{\rightskip}{0pt plus 5cm}void priority\-\_\-queue\-\_\-insert (
+\begin{DoxyParamCaption}
+\item[{{\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{queue, }
+\item[{const void $\ast$}]{element, }
+\item[{const int}]{rank}
+\end{DoxyParamCaption}
+)}}\label{a00011_a072c6297756a780f0bdb180669f7e675}
+insert a new element in the queue. Insert the given element in the last place in the heap (e.\-g.\-: in the last level most right place). With swapping move the element in the correct place. The element will be copied with the copy function which was given during initialization. 
+\begin{DoxyParams}{Parameters}
+{\em queue} & Queue to expand. \\
+\hline
+{\em element} & Element to insert. \\
+\hline
+{\em rank} & the rank of the given element \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00011_afdd086076bc9e624185b0bce2562db59}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-pop@{priority\-\_\-queue\-\_\-pop}}
+\index{priority\-\_\-queue\-\_\-pop@{priority\-\_\-queue\-\_\-pop}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-pop}]{\setlength{\rightskip}{0pt plus 5cm}void priority\-\_\-queue\-\_\-pop (
+\begin{DoxyParamCaption}
+\item[{{\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{queue}
+\end{DoxyParamCaption}
+)}}\label{a00011_afdd086076bc9e624185b0bce2562db59}
+Remove the first element in the queue. This element is the maximum element. After the deletition the last element (e.\-g.\-: in the last level the most right one) will be placed to the root place. After this with swapping the elements will be reordered. \hypertarget{a00011_a15f272d0534958950428a5fa2ababb1a}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-pop\-\_\-back@{priority\-\_\-queue\-\_\-pop\-\_\-back}}
+\index{priority\-\_\-queue\-\_\-pop\-\_\-back@{priority\-\_\-queue\-\_\-pop\-\_\-back}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-pop\-\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}void priority\-\_\-queue\-\_\-pop\-\_\-back (
+\begin{DoxyParamCaption}
+\item[{{\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{queue, }
+\item[{unsigned}]{num\-\_\-of\-\_\-elements}
+\end{DoxyParamCaption}
+)}}\label{a00011_a15f272d0534958950428a5fa2ababb1a}
+Removes the given number of elements from the back of the queue. This function removes the num\-\_\-of\-\_\-elements worths elements from the given queue.
+
+This function do memory allocations therefore it is not so efficient. If it is possible to avoid this usage it worth it. 
+\begin{DoxyParams}{Parameters}
+{\em num\-\_\-of\-\_\-elements,\-:} & number of removeable elements \\
+\hline
+{\em queue,\-:} & Queue to modify \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00011_a24c1dace7ca91d56903ed656c57fddfc}{\index{priority\-\_\-queue.\-h@{priority\-\_\-queue.\-h}!priority\-\_\-queue\-\_\-to\-\_\-list@{priority\-\_\-queue\-\_\-to\-\_\-list}}
+\index{priority\-\_\-queue\-\_\-to\-\_\-list@{priority\-\_\-queue\-\_\-to\-\_\-list}!priority_queue.h@{priority\-\_\-queue.\-h}}
+\paragraph[{priority\-\_\-queue\-\_\-to\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf list\-\_\-\-L\-I\-S\-T} priority\-\_\-queue\-\_\-to\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{const {\bf priority\-\_\-queue\-\_\-\-Q\-U\-E\-U\-E} $\ast$}]{queue}
+\end{DoxyParamCaption}
+)}}\label{a00011_a24c1dace7ca91d56903ed656c57fddfc}
+Creates a sorted list from the given queue. It is usefull to iterates over the elements which is sorted by rank. \begin{DoxyReturn}{Returns}
+A list with the copy of elements which are ordered by rank. 
+\end{DoxyReturn}
