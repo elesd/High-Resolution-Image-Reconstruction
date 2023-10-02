@@ -1,3 +1,12 @@
+STATUS
+======
+Abandond experimental C/C++ project. 
+The goal was 
+ - to use the Haar wavelet to reconstruct images.
+ - Getting more familiar with its concept of Haar wavelet and reconstruction method
+ - Experimenting with evolution algorithm to find optimal parameters
+ - Connecting C and C++ projects
+
 CONTENT
 =======
 In this repository you can find 4 projects.
